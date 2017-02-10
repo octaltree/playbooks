@@ -21,7 +21,6 @@
     group: "{{ user.group }}"
     uid: "{{ user.uid }}"
     shell: "{{ user.shell }}"
-    password: "{{ user.password|trim|password_hash('sha512') }}"
   when:
     (user.password is undefined) or
     (user.password is none) or
