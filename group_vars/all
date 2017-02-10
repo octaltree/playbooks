@@ -43,7 +43,7 @@ pacman:
       - firefox
       - chromium
       - gimp
-      - vlc
+      - mpv
       - gpicview
 
 aur:
