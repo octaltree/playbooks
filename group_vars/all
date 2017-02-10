@@ -1,0 +1,54 @@
+user:
+  uid: 1000
+  name: octaltree
+  group: octaltree
+  shell: /usr/bin/zsh
+
+dotfiles:
+  url: https://octaltree@github.com/octaltree
+
+pacman:
+  packages:
+    env:
+      - base-devel
+      - coreutils
+      - moreutils
+      - curl
+      - wget
+      - bc
+      - rsync
+      - the_silver_searcher
+      - docker
+      - git
+      - tmux
+      - fzf
+      - zsh
+      - zsh-completions
+      - neovim
+      - python-neovim
+      - imagemagick
+      - gnuplot
+    ime:
+      - ibus-skk
+      - skk-jisyo
+      - skktools
+    lang:
+      - python
+      - rustup
+      - stack
+    gui:
+      - xorg-xbacklight
+      - xorg-xrandr
+      - xclip
+      - firefox
+      - chromium
+      - gimp
+      - vlc
+      - gpicview
+
+aur:
+  packages:
+    - ttf-ricty
+    - translate-shell
+    - lastpass-cli
+    - massren

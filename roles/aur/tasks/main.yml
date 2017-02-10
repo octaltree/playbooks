@@ -1,0 +1,7 @@
+---
+- name: Install yaourt
+  pacman: name=yaourt state=present
+
+- name: Install aur packages
+  command: yaourt -S "{{ item }}" --noconfirm --needed
+  with_items: "{{ aur.packages }}"

@@ -1,0 +1,5 @@
+---
+- name: Init neovim
+  shell: if which nvim; then nvim -c ':UpdateRemotePlugins' -c ":q"; fi
+  become: yes
+  become_user: "{{ user.name }}"

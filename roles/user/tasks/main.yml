@@ -1,0 +1,59 @@
+---
+- name: Create user group
+  group: name={{ user.group }} state=present
+
+- name: Create user with password
+  user:
+    name: "{{ user.name }}"
+    group: "{{ user.group }}"
+    uid: "{{ user.uid }}"
+    shell: "{{ user.shell }}"
+    password: "{{ user.password|trim|password_hash('sha512') }}"
+  when: not(
+    (user.password is undefined) or
+    (user.password is none) or
+    (user.password|trim == '') or
+    (user.password|trim == 'None'))
+
+- name: Create user without password
+  user:
+    name: "{{ user.name }}"
+    group: "{{ user.group }}"
+    uid: "{{ user.uid }}"
+    shell: "{{ user.shell }}"
+    password: "{{ user.password|trim|password_hash('sha512') }}"
+  when:
+    (user.password is undefined) or
+    (user.password is none) or
+    (user.password|trim == '') or
+    (user.password|trim == 'None')
+
+- name: install xdg-user-dirs
+  pacman: name=xdg-user-dirs state=present
+
+- name: Create dirs
+  file: path=/home/{{ user.name }}/{{ item }} state=directory owner={{ user.name }} group={{ user.group }} mode=0755
+  with_items:
+    - workspace
+    - storage/repos
+    - storage/music
+    - storage/pictures
+    - storage/videos
+    - storage/public
+    - storage/desktop
+    - storage/templates
+    - storage/wallpapers
+    - .config
+    - .ssh
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Copy user-dirs.dirs
+  copy: src=user-dirs.dirs dest=/home/{{ user.name }}/.config/user-dirs.dirs
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Update user-dirs
+  shell: xdg-user-dirs-update
+  become: yes
+  become_user: "{{ user.name }}"
