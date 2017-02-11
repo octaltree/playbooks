@@ -1,0 +1,4 @@
+ttf-ricty
+translate-shell
+lastpass-cli
+massren
