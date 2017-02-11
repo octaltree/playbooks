@@ -2,7 +2,6 @@
 - hosts: localhost
   roles:
     - {role: pacman, tags: ['pacman']}
-    - {role: aur, tags: ['aur']}
     - {role: user, tags: ['user']}
     - {role: dotfiles, tags: ['dotfiles']}
     - {role: neovim, tags: ['neovim']}
