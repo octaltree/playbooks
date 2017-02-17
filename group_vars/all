@@ -29,7 +29,7 @@ pacman:
       - imagemagick
       - gnuplot
     ime:
-      - ibus-skk
+      - uim
       - skk-jisyo
       - skktools
     lang:
