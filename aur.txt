@@ -2,3 +2,4 @@ ttf-ricty
 translate-shell
 lastpass-cli
 massren
+pulsemixer-git
