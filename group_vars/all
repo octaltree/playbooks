@@ -39,6 +39,7 @@ pacman:
       - xorg-xbacklight
       - xorg-xrandr
       - xclip
+      - redshift
       - firefox
       - chromium
       - gimp
