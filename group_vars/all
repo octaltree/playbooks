@@ -29,9 +29,8 @@ pacman:
       - imagemagick
       - gnuplot
     ime:
-      - uim
-      - skk-jisyo
-      - skktools
+      - fcitx
+      - fcitx-mozc
     lang:
       - python
       - rustup
