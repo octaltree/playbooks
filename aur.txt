@@ -3,3 +3,5 @@ translate-shell
 lastpass-cli
 massren
 pulsemixer-git
+android-studio
+git-repo
