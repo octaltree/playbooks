@@ -45,3 +45,4 @@ pacman:
       - gimp
       - mpv
       - gpicview
+      - libreoffice-still
