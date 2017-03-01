@@ -6,6 +6,7 @@
     - {role: dotfiles, tags: ['dotfiles']}
     - {role: neovim, tags: ['neovim']}
     - {role: ssd, tags: ['ssd']}
+    - {role: grub, tags: ['grub']}
     # tex
     # virtualbox
     # slack, twitter

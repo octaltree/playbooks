@@ -1,0 +1,8 @@
+---
+- name: Edit GRUB_TIMEOUT
+  lineinfile:
+    dest: /etc/default/grub
+    regexp: '^[ 	]*GRUB_TIMEOUT[ 	]*=[ 	]*[0-9]+$'
+    line: 'GRUB_TIMEOUT=1'
+- name: Update config
+  shell: update-grub
