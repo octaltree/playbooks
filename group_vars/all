@@ -5,7 +5,8 @@ user:
   shell: /usr/bin/zsh
 
 dotfiles:
-  url: https://octaltree@github.com/octaltree/dotfiles
+  https: https://octaltree@github.com/octaltree/dotfiles
+  ssh: gh:octaltree/dotfiles
 
 pacman:
   packages:
