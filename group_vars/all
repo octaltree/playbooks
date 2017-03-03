@@ -48,3 +48,4 @@ pacman:
       - mpv
       - gpicview
       - libreoffice-still
+      - thunderbird
