@@ -3,6 +3,7 @@
   roles:
     - {role: pacman, tags: ['pacman']}
     - {role: user, tags: ['user']}
+    - {role: aur, tags: ['aur']}
     - {role: dotfiles, tags: ['dotfiles']}
     - {role: neovim, tags: ['neovim']}
     - {role: ssd, tags: ['ssd']}

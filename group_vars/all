@@ -49,3 +49,5 @@ pacman:
       - gpicview
       - libreoffice-still
       - thunderbird
+aur:
+  packages: []

@@ -1,0 +1,27 @@
+---
+- name: Create AUR dir
+  file:
+    path: /home/{{ user.name }}/storage/aur
+    state: directory
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Install cower
+  aur:
+    name: cower
+    user: "{{ user.name }}"
+    dir: /home/{{ user.name }}/storage/aur
+    skip_pgp: yes
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Install AUR base packages
+  aur:
+    name: "{{ item }}"
+    user: "{{ user.name }}"
+    dir: /home/{{ user.name }}/storage/aur
+  with_items: "{{ aur.packages }}"
+  become: yes
+  become_user: "{{ user.name }}"
