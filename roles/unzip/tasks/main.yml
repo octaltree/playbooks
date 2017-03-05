@@ -1,0 +1,11 @@
+---
+- name: Remove unzip
+  pacman: 
+    name: unzip
+    state: absent
+    recurse: yes
+
+- name: Install unzip-iconv
+  shell: yaourt -S --needed --noconfirm unzip-iconv
+  become: yes
+  become_user: "{{ user.name }}"
