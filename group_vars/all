@@ -29,6 +29,8 @@ pacman:
       - python-neovim
       - imagemagick
       - gnuplot
+      - qemu
+      - libvirt
     ime:
       - fcitx
       - fcitx-mozc
