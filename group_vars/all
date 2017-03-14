@@ -31,7 +31,6 @@ pacman:
       - gnuplot
       - qemu
       - libvirt
-      - mariadb
     ime:
       - fcitx
       - fcitx-mozc
