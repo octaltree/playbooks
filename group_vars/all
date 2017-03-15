@@ -32,6 +32,7 @@ pacman:
       - qemu
       - libvirt
       - bitlbee
+      - openbsd-netcat
     ime:
       - fcitx
       - fcitx-mozc
