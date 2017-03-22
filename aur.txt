@@ -7,3 +7,4 @@ android-studio
 git-repo
 magic-wormhole
 droopy-git
+rhc
