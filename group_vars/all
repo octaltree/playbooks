@@ -41,6 +41,7 @@ pacman:
       - python
       - rustup
       - stack
+      - npm
     gui:
       - xorg-xbacklight
       - xorg-xrandr
