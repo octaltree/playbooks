@@ -8,6 +8,7 @@
     - {role: ssd, tags: ['ssd']}
     - {role: grub, tags: ['grub']}
     - {role: unzip, tags: ['unzip']}
+    - {role: tor, tags: ['tor']}
     # tex
     # virtualbox
     # slack, twitter

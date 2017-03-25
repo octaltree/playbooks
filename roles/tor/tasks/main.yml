@@ -1,0 +1,9 @@
+---
+- name: Install Tor
+  pacman: name={{ item }} state=present
+  with_items:
+    - tor
+    - torsocks
+
+- name: Enable and start Tor
+  systemd: name=tor enabled=yes state=started
