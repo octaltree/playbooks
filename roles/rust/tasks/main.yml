@@ -1,0 +1,16 @@
+---
+- name: Install rustup
+  pacman: name=rustup state=present
+- name: Make .cargo/bin
+  file:
+    path: "/home/{{ user.name }}/.cargo/bin"
+    state: directory
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+    mode: 0755
+  become: yes
+  become_user: "{{ user.name }}"
+- name: rustup
+  shell: rustup default stable
+  become: yes
+  become_user: "{{ user.name }}"

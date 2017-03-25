@@ -9,6 +9,7 @@
     - {role: grub, tags: ['grub']}
     - {role: unzip, tags: ['unzip']}
     - {role: tor, tags: ['tor']}
+    - {role: rust, tags: ['rust']}
     # tex
     # virtualbox
     # slack, twitter

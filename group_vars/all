@@ -40,7 +40,6 @@ pacman:
       - fcitx-configtool
     lang:
       - python
-      - rustup
       - stack
       - npm
     gui:
