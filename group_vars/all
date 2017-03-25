@@ -20,6 +20,7 @@ pacman:
       - rsync
       - the_silver_searcher
       - docker
+      - docker-compose
       - git
       - tmux
       - fzf
