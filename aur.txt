@@ -6,4 +6,3 @@ pulsemixer-git
 android-studio
 magic-wormhole
 droopy-git
-rhc
