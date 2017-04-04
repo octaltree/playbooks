@@ -19,8 +19,6 @@ pacman:
       - bc
       - rsync
       - the_silver_searcher
-      - docker
-      - docker-compose
       - git
       - tmux
       - fzf
@@ -55,3 +53,8 @@ pacman:
       - mpv
       - gpicview
       - libreoffice-still
+
+docker:
+  images:
+    - schickling/rust:latest
+    - base/devel:latest
