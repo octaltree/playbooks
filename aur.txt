@@ -4,7 +4,6 @@ lastpass-cli
 massren
 pulsemixer-git
 android-studio
-git-repo
 magic-wormhole
 droopy-git
 rhc
