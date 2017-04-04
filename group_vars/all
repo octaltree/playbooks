@@ -36,6 +36,7 @@ pacman:
       - openbsd-netcat
     ime:
       - fcitx
+      - fcitx-im
       - fcitx-mozc
       - fcitx-configtool
     lang:
