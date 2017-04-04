@@ -6,7 +6,8 @@
     - docker-compose
 
 - name: Join docker
-  shell: usermod -aG docker {{ user.name }}
+  shell: usermod -aG docker {{ item }}
+  with_items: "{{ docker.group }}"
 
 - name: Enable and start docker
   systemd: name=docker enabled=yes state=started daemon_reload=yes
