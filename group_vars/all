@@ -32,6 +32,7 @@ pacman:
       - libvirt
       - bitlbee
       - openbsd-netcat
+      - cups
     ime:
       - fcitx
       - fcitx-im
