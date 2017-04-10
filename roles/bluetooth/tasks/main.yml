@@ -1,0 +1,11 @@
+---
+- name: Install packages for bluetooth
+  pacman: name={{ item }} state=present
+  with_items:
+    - pulseaudio-alsa
+    - pulseaudio-bluetooth
+    - bluez
+    - bluez-libs
+    - bluez-utils
+    - bluez-firmware
+    - pulseaudio-bluetooth
