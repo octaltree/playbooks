@@ -14,6 +14,7 @@ pacman:
       - base-devel
       - coreutils
       - moreutils
+      - dnsutils
       - curl
       - wget
       - bc
