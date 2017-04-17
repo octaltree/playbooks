@@ -35,6 +35,7 @@ pacman:
       - openbsd-netcat
       - cups
       - poppler
+      - unrar
     ime:
       - fcitx
       - fcitx-im
