@@ -15,3 +15,5 @@
 - name: Install virtualbox-host-modules
   pacman: name={{ item }}
   with_items: "{{ hostmodules.stdout_lines }}"
+
+# yaourt virtualbox-ext-oracle
