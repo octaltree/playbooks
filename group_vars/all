@@ -34,6 +34,7 @@ pacman:
       - bitlbee
       - openbsd-netcat
       - cups
+      - poppler
     ime:
       - fcitx
       - fcitx-im
