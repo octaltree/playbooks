@@ -1,0 +1,17 @@
+---
+- name: Install vbox
+  pacman: name=virtualbox
+
+- name: Add user group
+  shell: gpasswd -a {{ user.name }} {{ item }}
+  with_items:
+    - disk
+    - vboxusers
+
+- name: Get virtualbox-host-modules
+  shell: pacman -Ss -q virtualbox-host-modules
+  register: hostmodules
+
+- name: Install virtualbox-host-modules
+  pacman: name={{ item }}
+  with_items: "{{ hostmodules.stdout_lines }}"
