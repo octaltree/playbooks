@@ -11,5 +11,6 @@
     - {role: tor, tags: ['tor']}
     - {role: docker, tags: ['docker']}
     - {role: virtualbox, tags: ['virtualbox']}
+    - {role: flashplayer, tags: ['flashplayer']}
     # tex
     # TODO without changing

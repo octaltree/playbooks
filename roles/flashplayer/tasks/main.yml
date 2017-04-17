@@ -1,0 +1,7 @@
+---
+- name: Scraping flashplayer dl link
+  shell: curl http://www.adobe.com/support/flashplayer/debug_downloads.html| sed -n 's/^.*href="\(http.*flashplayer.*linux.x86_64.tar.gz\)".*$/\1/p'
+  register: dllink
+
+- name: Download bin
+  shell: cd `mktemp -d` && curl {{ dllink.stdout }}| tar xzvf - && mv flashplayer /usr/local/bin
