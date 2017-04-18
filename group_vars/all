@@ -36,6 +36,7 @@ pacman:
       - cups
       - poppler
       - unrar
+      - zip
     ime:
       - fcitx
       - fcitx-im
