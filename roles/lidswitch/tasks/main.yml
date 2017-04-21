@@ -1,0 +1,16 @@
+---
+- name: HandleLidSwitch in /etc/systemd/logind.conf
+  lineinfile:
+    dest: /etc/systemd/logind.conf
+    state: present
+    backrefs: yes
+    regexp: '^\s*HandleLidSwitch\s*=.*'
+    line: 'HandleLidSwitch = ignore'
+
+- name: HandleLidSwitchDocked in /etc/systemd/logind.conf
+  lineinfile:
+    dest: /etc/systemd/logind.conf
+    state: present
+    backrefs: yes
+    regexp: '^\s*HandleLidSwitchDocked\s*=.*'
+    line: 'HandleLidSwitchDocked = ignore'
