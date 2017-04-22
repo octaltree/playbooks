@@ -13,5 +13,5 @@
     - {role: virtualbox, tags: ['virtualbox']}
     - {role: flashplayer, tags: ['flashplayer']}
     - {role: lidswitch, tags: ['lidswitch']}
-    # tex
+    - {role: tex, tags: ['tex']}
     # TODO without changing
