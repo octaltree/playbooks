@@ -66,3 +66,4 @@ docker:
     - schickling/rust:latest
     - base/devel:latest
     - octaltree/sandbox:latest
+    - sotetsuk/platex:latest
