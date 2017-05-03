@@ -37,6 +37,7 @@ pacman:
       - poppler
       - unrar
       - zip
+      - aws-cli
     ime:
       - fcitx
       - fcitx-im
