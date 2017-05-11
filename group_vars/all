@@ -38,6 +38,7 @@ pacman:
       - unrar
       - zip
       - aws-cli
+      - jq
     ime:
       - fcitx
       - fcitx-im
