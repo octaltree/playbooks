@@ -65,7 +65,4 @@ docker:
   group:
     - octaltree
   images:
-    - schickling/rust:latest
     - base/devel:latest
-    - octaltree/sandbox:latest
-    - sotetsuk/platex:latest
