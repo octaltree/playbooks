@@ -50,6 +50,7 @@ pacman:
       - stack
       - npm
       - composer
+      - php-intl
     gui:
       - xorg-xbacklight
       - xorg-xrandr
