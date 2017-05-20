@@ -37,6 +37,8 @@ pacman:
       - poppler
       - unrar
       - zip
+      - aws-cli
+      - jq
     ime:
       - fcitx
       - fcitx-im
@@ -63,7 +65,4 @@ docker:
   group:
     - octaltree
   images:
-    - schickling/rust:latest
     - base/devel:latest
-    - octaltree/sandbox:latest
-    - sotetsuk/platex:latest
