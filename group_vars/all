@@ -49,6 +49,7 @@ pacman:
       - rustup
       - stack
       - npm
+      - composer
     gui:
       - xorg-xbacklight
       - xorg-xrandr
