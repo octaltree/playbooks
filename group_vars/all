@@ -62,6 +62,7 @@ pacman:
       - mpv
       - gpicview
       - libreoffice-still
+      - evince
 
 docker:
   group:
