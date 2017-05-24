@@ -51,6 +51,7 @@ pacman:
       - npm
       - composer
       - php-intl
+      - ctags
     gui:
       - xorg-xbacklight
       - xorg-xrandr
