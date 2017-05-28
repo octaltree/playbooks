@@ -51,7 +51,6 @@ pacman:
       - python2-pip
       - python2-virtualenv
       - ruby
-      - rustup
       - stack
       - npm
       - composer
