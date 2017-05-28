@@ -46,6 +46,7 @@ pacman:
       - fcitx-configtool
     lang:
       - python
+      - python-jedi
       - python2
       - python2-pip
       - python2-virtualenv
