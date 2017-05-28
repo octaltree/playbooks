@@ -46,7 +46,10 @@ pacman:
       - fcitx-configtool
     lang:
       - python
+      - python2
+      - python2-pip
       - python2-virtualenv
+      - ruby
       - rustup
       - stack
       - npm
