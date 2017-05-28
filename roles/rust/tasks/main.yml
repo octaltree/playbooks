@@ -1,0 +1,23 @@
+---
+- name: Install rustup
+  pacman: name=rustup state=present
+
+- name: rustup update
+  shell: rustup update
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: rustup component add rust-src
+  shell: rustup component add rust-src
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: cargo install racer
+  shell: which racer || cargo install racer
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: cargo install rustfmt
+  shell: which rustfmt || cargo install rustfmt
+  become: yes
+  become_user: "{{ user.name }}"
