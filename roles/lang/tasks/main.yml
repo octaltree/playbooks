@@ -2,8 +2,6 @@
 - name: pip
   shell: pip install "{{ item }}"
   with_items: "{{ pm.pip }}"
-  become: yes
-  become_user: "{{ user.name }}"
 
 - name: pip2
   shell: pip2 install "{{ item }}"
