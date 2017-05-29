@@ -1,0 +1,6 @@
+---
+- name: Install with yaourt
+  shell: yaourt -S --needed --noconfirm "{{ item }}"
+  with_items: "{{ aur.packages }}"
+  become: yes
+  become_user: "{{ user.name }}"

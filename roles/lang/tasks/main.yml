@@ -1,1 +1,33 @@
 ---
+- name: pip
+  shell: pip install "{{ item }}"
+  with_items: "{{ pm.pip }}"
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: pip2
+  shell: pip2 install "{{ item }}"
+  with_items: "{{ pm.pip2 }}"
+
+- name: gem
+  shell: gem install "{{ item }}"
+  with_items: "{{ pm.gem }}"
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: rustup update
+  shell: rustup update
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: rustup
+  shell: rustup component add "{{ item }}"
+  with_items: "{{ pm.rustup }}"
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: cargo
+  shell: cargo install -f "{{ item }}"
+  with_items: "{{ pm.cargo }}"
+  become: yes
+  become_user: "{{ user.name }}"

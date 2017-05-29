@@ -10,12 +10,13 @@ dotfiles:
 
 pm:
   pip:
+    - neovim
     - flake8
     - jedi
     - mypy-lang
-    - neovim
   pip2:
     - neovim
+    - virtualenv
   gem:
     - neovim
   rustup:
@@ -65,10 +66,8 @@ pacman:
     lang:
       - python
       - python-pip
-      - python-jedi
       - python2
       - python2-pip
-      - python2-virtualenv
       - ruby
       - stack
       - npm
@@ -87,6 +86,16 @@ pacman:
       - gpicview
       - libreoffice-still
       - evince
+aur:
+  packages:
+    - ttf-ricty
+    - translate-shell
+    - lastpass-cli
+    - massren
+    - pulsemixer-git
+    - android-studio
+    - magic-wormhole
+    - droopy-git
 
 docker:
   group:
