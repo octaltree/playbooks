@@ -1,11 +1,15 @@
 ---
 - name: pip
-  shell: pip install "{{ item }}"
+  shell: pip install --user "{{ item }}"
   with_items: "{{ pm.pip }}"
+  become: yes
+  become_user: "{{ user.name }}"
 
 - name: pip2
-  shell: pip2 install "{{ item }}"
+  shell: pip2 install --user "{{ item }}"
   with_items: "{{ pm.pip2 }}"
+  become: yes
+  become_user: "{{ user.name }}"
 
 - name: gem
   shell: gem install "{{ item }}"
