@@ -25,7 +25,8 @@ pm:
     - rustfmt
   composer: []
   npm: []
-  stack: []
+  stack:
+    - ghc-mod
 
 pacman:
   packages:
@@ -43,9 +44,7 @@ pacman:
       - tmux
       - fzf
       - zsh
-      - zsh-completions
       - neovim
-      - python-neovim
       - imagemagick
       - gnuplot
       - qemu
