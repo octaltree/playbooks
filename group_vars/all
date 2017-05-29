@@ -8,6 +8,25 @@ dotfiles:
   https: https://octaltree@github.com/octaltree/dotfiles
   ssh: gh:octaltree/dotfiles
 
+pm:
+  pip:
+    - flake8
+    - jedi
+    - mypy-lang
+    - neovim
+  pip2:
+    - neovim
+  gem:
+    - neovim
+  rustup:
+    - rust-src
+  cargo:
+    - racer
+    - rustfmt
+  composer: []
+  npm: []
+  stack: []
+
 pacman:
   packages:
     env:
@@ -46,6 +65,7 @@ pacman:
       - fcitx-configtool
     lang:
       - python
+      - python-pip
       - python-jedi
       - python2
       - python2-pip
