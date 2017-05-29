@@ -1,9 +1,0 @@
-ttf-ricty
-translate-shell
-lastpass-cli
-massren
-pulsemixer-git
-android-studio
-magic-wormhole
-droopy-git
-virtualbox-ext-oracle

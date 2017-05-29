@@ -15,5 +15,7 @@
 - name: Install virtualbox-host-modules
   pacman: name={{ item }}
   with_items: "{{ hostmodules.stdout_lines }}"
-
-# yaourt virtualbox-ext-oracle
+- name: Install virtualbox-ext-oracle
+  shell: yaourt -S --needed --noconfirm virtualbox-ext-oracle
+  become: yes
+  become_user: "{{ user.name }}"

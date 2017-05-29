@@ -8,6 +8,27 @@ dotfiles:
   https: https://octaltree@github.com/octaltree/dotfiles
   ssh: gh:octaltree/dotfiles
 
+pm:
+  pip:
+    - neovim
+    - flake8
+    - jedi
+    - mypy-lang
+  pip2:
+    - neovim
+    - virtualenv
+  gem:
+    - neovim
+  rustup:
+    - rust-src
+  cargo:
+    - racer
+    - rustfmt
+  composer: []
+  npm: []
+  stack:
+    - ghc-mod
+
 pacman:
   packages:
     env:
@@ -24,9 +45,7 @@ pacman:
       - tmux
       - fzf
       - zsh
-      - zsh-completions
       - neovim
-      - python-neovim
       - imagemagick
       - gnuplot
       - qemu
@@ -46,10 +65,9 @@ pacman:
       - fcitx-configtool
     lang:
       - python
-      - python-jedi
+      - python-pip
       - python2
       - python2-pip
-      - python2-virtualenv
       - ruby
       - stack
       - npm
@@ -68,6 +86,16 @@ pacman:
       - gpicview
       - libreoffice-still
       - evince
+aur:
+  packages:
+    - ttf-ricty
+    - translate-shell
+    - lastpass-cli
+    - massren
+    - pulsemixer-git
+    - android-studio
+    - magic-wormhole
+    - droopy-git
 
 docker:
   group:
