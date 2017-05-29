@@ -11,9 +11,7 @@ dotfiles:
 pm:
   pip:
     - neovim
-    - flake8
     - jedi
-    - mypy-lang
   pip2:
     - neovim
     - virtualenv
