@@ -57,7 +57,7 @@ pacman:
       - jq
     db:
       - mariadb
-      - libmariaclient
+      - libmariadbclient
       - mariadb-clients
     ime:
       - fcitx
