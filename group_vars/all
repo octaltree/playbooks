@@ -55,6 +55,10 @@ pacman:
       - zip
       - aws-cli
       - jq
+    db:
+      - mariadb
+      - libmariaclient
+      - mariadb-clients
     ime:
       - fcitx
       - fcitx-im

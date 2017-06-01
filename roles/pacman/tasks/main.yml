@@ -1,10 +1,13 @@
 ---
-- name: Up{dat,rad}e pacman packages
+- name: Up{dat,grad}e pacman packages
   pacman: update_cache=yes upgrade=yes
 
 - name: Install pacman packages env
   pacman: name={{ item }} state=present
   with_items: "{{ pacman.packages.env }}"
+- name: Install pacman packages db
+  pacman: name={{ item }} state=present
+  with_items: "{{ pacman.packages.db }}"
 - name: Install pacman packages ime
   pacman: name={{ item }} state=present
   with_items: "{{ pacman.packages.ime }}"
