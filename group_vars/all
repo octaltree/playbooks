@@ -55,6 +55,7 @@ pacman:
       - zip
       - aws-cli
       - jq
+      - hub
     db:
       - mariadb
       - libmariadbclient
@@ -75,6 +76,7 @@ pacman:
       - composer
       - php-intl
       - ctags
+      - clang
     gui:
       - xorg-xbacklight
       - xorg-xrandr
