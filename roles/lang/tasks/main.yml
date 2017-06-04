@@ -17,6 +17,16 @@
   become: yes
   become_user: "{{ user.name }}"
 
+- name: rustup stable
+  shell: rustup install stable
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: rustup nightly
+  shell: rustup install nightly
+  become: yes
+  become_user: "{{ user.name }}"
+
 - name: rustup update
   shell: rustup update
   become: yes
