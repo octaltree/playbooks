@@ -56,7 +56,6 @@ pacman:
       - aws-cli
       - jq
       - hub
-      - yaourt
     db:
       - mariadb
       - libmariadbclient
