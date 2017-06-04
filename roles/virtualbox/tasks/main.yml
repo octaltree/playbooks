@@ -19,3 +19,5 @@
   shell: yaourt -S --needed --noconfirm virtualbox-ext-oracle
   become: yes
   become_user: "{{ user.name }}"
+  tags:
+    - yaourt
