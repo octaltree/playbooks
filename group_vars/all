@@ -89,6 +89,7 @@ pacman:
       - gpicview
       - libreoffice-still
       - evince
+      - audacity
 aur:
   packages:
     - ttf-ricty
