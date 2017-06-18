@@ -25,6 +25,7 @@ pm:
   npm: []
   stack:
     - ghc-mod
+    - yesod-bin
 
 pacman:
   packages:
