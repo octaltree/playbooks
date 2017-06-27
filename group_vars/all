@@ -22,6 +22,8 @@ pm:
     - racer
     - rustfmt
     - cargo-edit
+    - cargo-watch
+    - cargo-outdated
   composer: []
   npm: []
   stack:
