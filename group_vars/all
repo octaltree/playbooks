@@ -63,6 +63,7 @@ pacman:
       - mariadb
       - libmariadbclient
       - mariadb-clients
+      - postgresql-libs
     ime:
       - fcitx
       - fcitx-im
