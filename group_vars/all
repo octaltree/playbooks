@@ -19,6 +19,7 @@ pm:
   rustup:
     - rust-src
   cargo:
+    - diesel_cli
     - racer
     - rustfmt
     - cargo-edit
