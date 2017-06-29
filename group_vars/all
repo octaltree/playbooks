@@ -23,6 +23,7 @@ pm:
     - racer
     - rustfmt
     - cargo-edit
+    - cargo-expand
     - cargo-watch
     - cargo-outdated
   composer: []
