@@ -83,6 +83,7 @@ pacman:
       - npm
       - composer
       - php-intl
+      - php-sqlite
       - ctags
       - clang
     gui:
