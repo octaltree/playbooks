@@ -63,6 +63,7 @@ pacman:
       - jq
       - hub
       - portaudio
+      - nginx
     db:
       - mariadb
       - libmariadbclient
