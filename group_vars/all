@@ -115,5 +115,4 @@ aur:
 docker:
   group:
     - octaltree
-  images:
-    - base/devel:latest
+  images: []
