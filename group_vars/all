@@ -38,7 +38,7 @@ pacman:
       - base-devel
       - coreutils
       - moreutils
-      #- dnsutils
+      - bind-tools
       - curl
       - wget
       - bc
@@ -50,24 +50,25 @@ pacman:
       - zsh
       - neovim
       - imagemagick
-      - gnuplot
-      - qemu
-      - libvirt
-      - bitlbee
-      - openbsd-netcat
-      - cups
-      - poppler
       - unrar
       - zip
-      - aws-cli
       - jq
       - hub
-      - portaudio
       - nginx
+      #- gnuplot
+      #- qemu
+      #- libvirt
+      #- bitlbee
+      #- openbsd-netcat
+      #- cups
+      #- poppler
+      #- aws-cli
+      #- portaudio
     db:
       - mariadb
       - libmariadbclient
       - mariadb-clients
+      - postgresql
       - postgresql-libs
     ime:
       - fcitx
@@ -87,6 +88,7 @@ pacman:
       - php-sqlite
       - ctags
       - clang
+      - rustup
     gui:
       - tk
       - xorg-xbacklight
