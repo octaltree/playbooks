@@ -1,0 +1,11 @@
+- name: Install aur packages
+  shell: yaourt -S --needed --noconfirm "{{ item }}"
+  with_items:
+    - open-jtalk
+    - open-jtalk-voice-mei
+    - open-jtalk-voice-nitech-jp-atr503-m001
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - yaourt
+

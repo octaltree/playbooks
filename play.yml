@@ -16,4 +16,5 @@
     - {role: flashplayer, tags: ['flashplayer']}
     - {role: lidswitch, tags: ['lidswitch']}
     - {role: tex, tags: ['tex']}
+    - {role: jtalk, tags: ['jtalk']}
     # TODO without changing
