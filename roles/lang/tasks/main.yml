@@ -32,6 +32,11 @@
   become: yes
   become_user: "{{ user.name }}"
 
+- name: rustup default
+  shell: rustup default stable
+  become: yes
+  become_user: "{{ user.name }}"
+
 - name: rustup
   shell: rustup component add "{{ item }}"
   with_items: "{{ pm.rustup }}"

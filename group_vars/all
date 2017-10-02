@@ -35,9 +35,9 @@ pm:
 pacman:
   packages:
     env:
-      - base-devel
+      #- base-devel
       - coreutils
-      - moreutils
+      #- moreutils
       - bind-tools
       - curl
       - wget
