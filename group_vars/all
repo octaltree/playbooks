@@ -25,7 +25,6 @@ pm:
     - cargo-edit
     - cargo-expand
     - cargo-watch
-    - cargo-outdated
   composer: []
   npm: []
   stack:
