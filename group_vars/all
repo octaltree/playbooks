@@ -103,6 +103,7 @@ pacman:
       - libreoffice-still
       - evince
       - audacity
+      - flashplugin
 aur:
   packages:
     - ttf-ricty
