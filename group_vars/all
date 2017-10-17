@@ -42,6 +42,7 @@ pacman:
       - curl
       - wget
       - bc
+      - nmap
       - rsync
       - the_silver_searcher
       - git
