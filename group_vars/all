@@ -115,6 +115,7 @@ aur:
     - android-studio
     - magic-wormhole
     - droopy-git
+    - shotcut
 
 docker:
   group:
