@@ -25,6 +25,7 @@ pm:
     - cargo-edit
     - cargo-expand
     - cargo-watch
+    - watchexec
   composer: []
   npm: []
   stack:
