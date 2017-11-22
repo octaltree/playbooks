@@ -106,6 +106,7 @@ pacman:
       - evince
       - audacity
       - flashplugin
+      - pavucontrol
 aur:
   packages:
     - ttf-ricty
