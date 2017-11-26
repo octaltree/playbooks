@@ -118,6 +118,7 @@ aur:
     - magic-wormhole
     - droopy-git
     - shotcut
+    - waterfox-bin
 
 docker:
   group:
