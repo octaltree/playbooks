@@ -107,6 +107,7 @@ pacman:
       - audacity
       - flashplugin
       - pavucontrol
+      - inkscape
 aur:
   packages:
     - ttf-ricty
