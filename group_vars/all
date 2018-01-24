@@ -91,6 +91,7 @@ pacman:
       - ctags
       - clang
       - rustup
+      - cmake
     gui:
       - tk
       - xorg-xbacklight
