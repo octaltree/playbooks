@@ -66,6 +66,7 @@ pacman:
       #- poppler
       #- aws-cli
       #- portaudio
+      - sox
     db:
       - mariadb
       - libmariadbclient
