@@ -122,6 +122,7 @@ aur:
     - droopy-git
     - shotcut
     - waterfox-bin
+    - google-chrome
 
 docker:
   group:
