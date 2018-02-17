@@ -123,6 +123,7 @@ aur:
     - shotcut
     - waterfox-bin
     - google-chrome
+    - slack-desktop
 
 docker:
   group:
