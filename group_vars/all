@@ -124,6 +124,7 @@ aur:
     - waterfox-bin
     - google-chrome
     - slack-desktop
+    - gcalcli
 
 docker:
   group:
