@@ -125,6 +125,7 @@ aur:
     - google-chrome
     - slack-desktop
     - gcalcli
+    - swagger-codegen-git
 
 docker:
   group:
