@@ -93,6 +93,7 @@ pacman:
       - clang
       - rustup
       - cmake
+      - emscripten
     gui:
       - tk
       - xorg-xbacklight
