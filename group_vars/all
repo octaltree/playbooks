@@ -39,6 +39,7 @@ pacman:
       - coreutils
       #- moreutils
       - bind-tools
+      - net-tools
       - openbsd-netcat
       - curl
       - wget
