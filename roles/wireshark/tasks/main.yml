@@ -1,0 +1,5 @@
+---
+- name: add users to wireshark group
+  shell: gpasswd -a {{ item }} wireshark
+  with_items:
+    - "{{ user.name }}"

@@ -17,4 +17,5 @@
     - {role: lidswitch, tags: ['lidswitch']}
     - {role: tex, tags: ['tex']}
     - {role: jtalk, tags: ['jtalk']}
+    - {role: wireshark, tags: ['wireshark']}
     # TODO without changing
