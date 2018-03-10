@@ -68,6 +68,7 @@ pacman:
       #- aws-cli
       #- portaudio
       - sox
+      - wireshark-cli
     db:
       - mariadb
       - libmariadbclient
