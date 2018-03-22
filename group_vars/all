@@ -133,4 +133,5 @@ aur:
 docker:
   group:
     - octaltree
-  images: []
+  images:
+    - alpine:latest
