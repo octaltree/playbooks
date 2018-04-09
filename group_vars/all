@@ -129,6 +129,7 @@ aur:
     - slack-desktop
     - gcalcli
     - swagger-codegen-git
+    - pandoc-bin
 
 docker:
   group:
