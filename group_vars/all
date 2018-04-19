@@ -130,6 +130,7 @@ aur:
     - gcalcli
     - swagger-codegen-git
     - pandoc-bin
+    - tor-browser-en
 
 docker:
   group:
