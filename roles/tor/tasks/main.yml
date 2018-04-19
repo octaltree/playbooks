@@ -5,5 +5,5 @@
     - tor
     - torsocks
 
-- name: Enable and start Tor
-  systemd: name=tor enabled=yes state=started
+#- name: Enable and start Tor
+#  systemd: name=tor enabled=yes state=started
