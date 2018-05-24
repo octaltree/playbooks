@@ -131,6 +131,7 @@ aur:
     - swagger-codegen-git
     - pandoc-bin
     - tor-browser-en
+    - gallery-dl
 
 docker:
   group:
