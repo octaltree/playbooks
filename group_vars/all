@@ -132,6 +132,7 @@ aur:
     - pandoc-bin
     - tor-browser-en
     - gallery-dl
+    - ta-lib
 
 docker:
   group:
