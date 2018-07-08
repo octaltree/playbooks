@@ -69,6 +69,7 @@ pacman:
       #- portaudio
       - sox
       - wireshark-cli
+      - libpng12
     db:
       - mariadb
       - libmariadbclient
@@ -96,6 +97,9 @@ pacman:
       - rustup
       - cmake
       - emscripten
+      - go
+      - dep
+      - r
     gui:
       - tk
       - xorg-xbacklight
