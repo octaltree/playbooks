@@ -9,10 +9,8 @@ dotfiles:
   ssh: gh:octaltree/dotfiles
 
 pm:
-  pip:
-    - neovim
+  pip: []
   pip2:
-    - neovim
     - virtualenv
   gem:
     - neovim
@@ -52,6 +50,8 @@ pacman:
       - fzf
       - zsh
       - neovim
+      - python-neovim
+      - python2-neovim
       - imagemagick
       - unrar
       - zip
