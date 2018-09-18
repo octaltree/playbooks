@@ -48,3 +48,13 @@
   with_items: "{{ pm.cargo }}"
   become: yes
   become_user: "{{ user.name }}"
+
+- name : cargo nightly
+  shell: rustup run nightly cargo install -f "{{ item }}"
+  with_items: "{{ pm.cargo_nightly }}"
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: npm
+  shell: npm install -g "{{ item }}"
+  with_items: "{{ pm.npm }}"

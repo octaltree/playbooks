@@ -18,14 +18,16 @@ pm:
     - rust-src
   cargo:
     - diesel_cli
-    - racer
     - rustfmt
     - cargo-edit
     - cargo-expand
     - cargo-watch
     - watchexec
+  cargo_nightly:
+    - racer
   composer: []
-  npm: []
+  npm:
+    - neovim
   stack:
     - ghc-mod
     - yesod-bin
@@ -87,6 +89,7 @@ pacman:
       - python2
       - python2-pip
       - ruby
+      - ruby-rdoc
       - stack
       - npm
       - composer
