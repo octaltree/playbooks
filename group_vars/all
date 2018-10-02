@@ -72,6 +72,7 @@ pacman:
       - sox
       - wireshark-cli
       - libpng12
+      - oath-toolkit
     db:
       - mariadb
       - libmariadbclient
