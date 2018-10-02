@@ -73,6 +73,7 @@ pacman:
       - wireshark-cli
       - libpng12
       - oath-toolkit
+      - zbar
     db:
       - mariadb
       - libmariadbclient
