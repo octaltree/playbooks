@@ -148,3 +148,6 @@ docker:
     - octaltree
   images:
     - alpine:latest
+
+virtualbox:
+  host: linux419-virtualbox-host-modules

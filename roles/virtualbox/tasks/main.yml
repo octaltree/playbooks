@@ -8,16 +8,17 @@
     - disk
     - vboxusers
 
-- name: Get virtualbox-host-modules
-  shell: pacman -Ss -q virtualbox-host-modules
-  register: hostmodules
-
 - name: Install virtualbox-host-modules
-  pacman: name={{ item }}
-  with_items: "{{ hostmodules.stdout_lines }}"
+  pacman: name={{ virtualbox.host }}
+
 - name: Install virtualbox-ext-oracle
   shell: yaourt -S --needed --noconfirm virtualbox-ext-oracle
   become: yes
   become_user: "{{ user.name }}"
   tags:
     - yaourt
+
+- name: modprobe vboxdrv
+  shell: modprobe vboxdrv
+  become: yes
+  become_user: "{{ user.name }}"
