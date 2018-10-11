@@ -74,6 +74,7 @@ pacman:
       - libpng12
       - oath-toolkit
       - zbar
+      - youtube-dl
     db:
       - mariadb
       - libmariadbclient
