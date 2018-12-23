@@ -60,6 +60,7 @@ pacman:
       - jq
       - hub
       - nginx
+      - lsof
       #- gnuplot
       #- qemu
       #- libvirt
