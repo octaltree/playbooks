@@ -124,6 +124,7 @@ pacman:
       - flashplugin
       - pavucontrol
       - inkscape
+      - thunderbird
 aur:
   packages:
     - ttf-ricty
