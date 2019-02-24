@@ -92,6 +92,7 @@ pacman:
       - python-pip
       - python2
       - python2-pip
+      - python-language-server
       - ruby
       - ruby-rdoc
       - stack
