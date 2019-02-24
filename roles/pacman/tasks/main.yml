@@ -3,17 +3,12 @@
   pacman: update_cache=yes upgrade=yes
 
 - name: Install pacman packages env
-  pacman: name={{ item }} state=present
-  with_items: "{{ pacman.packages.env }}"
+  pacman: name={{ pacman.packages.env }} state=present
 - name: Install pacman packages db
-  pacman: name={{ item }} state=present
-  with_items: "{{ pacman.packages.db }}"
+  pacman: name={{ pacman.packages.db }} state=present
 - name: Install pacman packages ime
-  pacman: name={{ item }} state=present
-  with_items: "{{ pacman.packages.ime }}"
+  pacman: name={{ pacman.packages.ime }} state=present
 - name: Install pacman packages lang
-  pacman: name={{ item }} state=present
-  with_items: "{{ pacman.packages.lang }}"
+  pacman: name={{ pacman.packages.lang }} state=present
 - name: Install pacman packages gui
-  pacman: name={{ item }} state=present
-  with_items: "{{ pacman.packages.gui }}"
+  pacman: name={{ pacman.packages.gui }} state=present
