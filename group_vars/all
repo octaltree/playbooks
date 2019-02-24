@@ -107,7 +107,6 @@ pacman:
       - emscripten
       - go
       - dep
-      - r
     gui:
       - tk
       - xorg-xbacklight
