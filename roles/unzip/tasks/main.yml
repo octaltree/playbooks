@@ -1,6 +1,6 @@
 ---
 - name: Remove unzip
-  pacman: 
+  pacman:
     name: unzip
     state: absent
     recurse: yes

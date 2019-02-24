@@ -1,6 +1,7 @@
 ---
 - name: Install texlive
-  pacman: name={{ item }} state=present
-  with_items:
-    - texlive-langjapanese
-    - texlive-most
+  pacman:
+    name:
+      - texlive-langjapanese
+      - texlive-most
+    state: present
