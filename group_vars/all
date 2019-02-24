@@ -147,6 +147,7 @@ aur:
     - tor-browser-en
     - gallery-dl
     - ta-lib
+    - flashplayer-standalone
 
 docker:
   group:
