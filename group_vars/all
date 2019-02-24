@@ -36,7 +36,7 @@ pacman:
   packages:
     env:
       - ansible
-      #- base-devel
+      - base-devel
       - coreutils
       #- moreutils
       - bind-tools
