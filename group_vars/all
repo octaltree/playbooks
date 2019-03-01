@@ -78,6 +78,8 @@ pacman:
       - zbar
       - youtube-dl
       - gnuplot
+      - tesseract
+      - tesseract-data-jpn
     db:
       - mariadb
       - libmariadbclient
