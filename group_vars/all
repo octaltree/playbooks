@@ -137,19 +137,19 @@ aur:
     - lastpass-cli
     - massren
     - pulsemixer-git
-    - android-studio
-    - magic-wormhole
+    #- android-studio
+    #- magic-wormhole
     - droopy-git
-    - shotcut
+    #- shotcut
     - waterfox-bin
     - google-chrome
     - slack-desktop
-    - gcalcli
+    #- gcalcli
     - swagger-codegen-git
     - pandoc-bin
     - tor-browser-en
     - gallery-dl
-    - ta-lib
+    #- ta-lib
     - flashplayer-standalone
 
 docker:
