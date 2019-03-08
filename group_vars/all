@@ -78,8 +78,8 @@ pacman:
       - zbar
       - youtube-dl
       - gnuplot
-      - tesseract
-      - tesseract-data-jpn
+      #- tesseract
+      #- tesseract-data-jpn
     db:
       - mariadb
       - libmariadbclient
@@ -127,7 +127,7 @@ pacman:
       - audacity
       - flashplugin
       - pavucontrol
-      - inkscape
+      #- inkscape
       - thunderbird
       - vlc-nightly
 aur:
