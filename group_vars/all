@@ -134,7 +134,7 @@ aur:
   packages:
     - ttf-ricty
     - translate-shell
-    - lastpass-cli
+    #- lastpass-cli
     - massren
     - pulsemixer-git
     #- android-studio
