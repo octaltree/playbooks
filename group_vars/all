@@ -151,6 +151,7 @@ aur:
     - gallery-dl
     #- ta-lib
     - flashplayer-standalone
+    - nodejs-pxder
 
 docker:
   group:
