@@ -152,6 +152,7 @@ aur:
     #- ta-lib
     - flashplayer-standalone
     - nodejs-pxder
+    - google-cloud-sdk
 
 docker:
   group:
