@@ -23,8 +23,8 @@ pm:
     - cargo-expand
     - cargo-watch
     - watchexec
-  cargo_nightly:
     - racer
+  cargo_nightly: []
   composer: []
   npm:
     - neovim
