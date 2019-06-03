@@ -72,7 +72,7 @@ pacman:
       #- aws-cli
       #- portaudio
       - sox
-      - wireshark-cli
+      #- wireshark-cli
       - libpng12
       - oath-toolkit
       - zbar
@@ -101,9 +101,9 @@ pacman:
       - ruby-rdoc
       - stack
       - npm
-      - composer
-      - php-intl
-      - php-sqlite
+      #- composer
+      #- php-intl
+      #- php-sqlite
       - ctags
       - clang
       - rustup
