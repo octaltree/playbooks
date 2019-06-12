@@ -107,8 +107,8 @@ pacman:
       - clang
       - rustup
       - cmake
-      - emscripten
-      - go
+      #- emscripten
+      #- go
       - dep
     gui:
       - tk
@@ -117,7 +117,7 @@ pacman:
       - xclip
       - redshift
       - firefox
-      - chromium
+      #- chromium
       - gimp
       - mpv
       - gpicview
