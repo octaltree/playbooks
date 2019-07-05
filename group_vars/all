@@ -153,6 +153,8 @@ aur:
     - nodejs-pxder
     - google-cloud-sdk
     - todoist
+    - 4kvideodownloader
+    - teamviewer
 
 docker:
   group:
