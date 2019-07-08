@@ -128,7 +128,7 @@ pacman:
       - pavucontrol
       #- inkscape
       - thunderbird
-      - vlc-nightly
+      - vlc
 aur:
   packages:
     - ttf-ricty
