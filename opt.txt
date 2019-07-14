@@ -1,0 +1,7 @@
+github.com:octaltree/playbooks playbooks
+github.com:octaltree/scfes scfes
+bitbucket.org:octaltree/handyScript handyScript
+bitbucket.org:octaltree/hitomilaDownloader hitomilaDownloader
+bitbucket.org:octaltree/crawlingcrowdsourcing ccs
+bitbucket.org:octaltree/buzzvideo buzzvideo
+github.com:octaltree/bakforward bakforward
