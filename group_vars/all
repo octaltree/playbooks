@@ -79,6 +79,8 @@ pacman:
       - gnuplot
       #- tesseract
       #- tesseract-data-jpn
+      - rclone
+      - convmv
     db:
       - mariadb
       - libmariadbclient
@@ -153,7 +155,6 @@ aur:
     - nodejs-pxder
     - google-cloud-sdk
     - todoist
-    - 4kvideodownloader
     - teamviewer
 
 docker:
