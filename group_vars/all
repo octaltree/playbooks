@@ -19,13 +19,13 @@ pm:
     - rustfmt
     - rls
     - rust-analysis
-  cargo:
-    - diesel_cli
-    - cargo-edit
-    - cargo-expand
-    - cargo-watch
-    - watchexec
-    - racer
+  cargo: []
+    #- diesel_cli
+    #- cargo-edit
+    #- cargo-expand
+    #- cargo-watch
+    #- watchexec
+    #- racer
   cargo_nightly: []
   composer: []
   npm:
