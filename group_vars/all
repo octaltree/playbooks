@@ -114,6 +114,8 @@ pacman:
       #- emscripten
       #- go
       - dep
+      - nim
+      - nimble
     gui:
       - tk
       - xorg-xbacklight
