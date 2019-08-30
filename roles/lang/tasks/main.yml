@@ -55,6 +55,11 @@
   become: yes
   become_user: "{{ user.name }}"
 
+- name: cargo snippet
+  shell: rustup run nightly cargo install cargo-snippet --features="binaries"
+  become: yes
+  become_user: "{{ user.name }}"
+
 - name: npm
   shell: npm install -g "{{ item }}"
   with_items: "{{ pm.npm }}"
