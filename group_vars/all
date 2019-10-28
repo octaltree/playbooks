@@ -103,7 +103,8 @@ pacman:
       - ruby
       - ruby-rdoc
       - stack
-      - npm
+      #- npm
+      - yarn
       #- composer
       #- php-intl
       #- php-sqlite
@@ -159,6 +160,7 @@ aur:
     - nodejs-pxder
     - google-cloud-sdk
     - teamviewer
+    - erd-git
 
 docker:
   group:
