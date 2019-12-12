@@ -30,6 +30,7 @@ pm:
   composer: []
   npm:
     - neovim
+    - pxder
   stack:
     - ghc-mod
     - yesod-bin
@@ -96,9 +97,9 @@ pacman:
       - fcitx-configtool
     lang:
       - python
-      - python-pip
+      #- python-pip
       - python2
-      - python2-pip
+      #- python2-pip
       - python-language-server
       - ruby
       - ruby-rdoc
@@ -157,7 +158,7 @@ aur:
     - gallery-dl
     #- ta-lib
     - flashplayer-standalone
-    - nodejs-pxder
+    #- nodejs-pxder
     - google-cloud-sdk
     - teamviewer
     - erd-git
