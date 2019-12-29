@@ -84,6 +84,7 @@ pacman:
       #- tesseract-data-jpn
       - rclone
       - convmv
+      - alacritty
     db:
       - mariadb
       - libmariadbclient
