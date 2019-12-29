@@ -85,6 +85,7 @@ pacman:
       - rclone
       - convmv
       - alacritty
+      - alacritty-terminfo
     db:
       - mariadb
       - libmariadbclient
