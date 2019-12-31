@@ -41,7 +41,6 @@ pacman:
       - ansible
       - base-devel
       - coreutils
-      #- moreutils
       - bind-tools
       - net-tools
       - openbsd-netcat
@@ -65,27 +64,28 @@ pacman:
       - hub
       - nginx
       - lsof
+      - cups
+      - sox
+      - libpng12
+      - oath-toolkit # 2段階認証 otw.sh
+      - zbar # バーコード zbarimgコマンド
+      - youtube-dl
+      - gnuplot
+      - convmv # ファイル名文字コード
+      - alacritty
+      - alacritty-terminfo
+      #- rclone
+      #- moreutils
       #- gnuplot
       #- qemu
       #- libvirt
       #- bitlbee
-      - cups
       #- poppler
       #- aws-cli
       #- portaudio
-      - sox
       #- wireshark-cli
-      - libpng12
-      - oath-toolkit
-      - zbar
-      - youtube-dl
-      - gnuplot
       #- tesseract
       #- tesseract-data-jpn
-      - rclone
-      - convmv
-      - alacritty
-      - alacritty-terminfo
     db:
       - mariadb
       - libmariadbclient
@@ -99,27 +99,27 @@ pacman:
       - fcitx-configtool
     lang:
       - python
-      #- python-pip
       - python2
-      #- python2-pip
       - python-language-server
       - ruby
       - ruby-rdoc
       - stack
-      #- npm
       - yarn
-      #- composer
-      #- php-intl
-      #- php-sqlite
       - ctags
       - clang
       - rustup
       - cmake
+      - dep
+      #- nim
+      #- nimble
+      #- python-pip
+      #- python2-pip
+      #- npm
+      #- composer
+      #- php-intl
+      #- php-sqlite
       #- emscripten
       #- go
-      - dep
-      - nim
-      - nimble
     gui:
       - tk
       - xorg-xbacklight
@@ -127,7 +127,6 @@ pacman:
       - xclip
       - redshift
       - firefox
-      #- chromium
       - gimp
       - mpv
       - gpicview
@@ -136,9 +135,10 @@ pacman:
       - audacity
       - flashplugin
       - pavucontrol
-      #- inkscape
       - thunderbird
       - vlc
+      #- chromium
+      #- inkscape
 aur:
   packages:
     - ttf-ricty
@@ -146,24 +146,23 @@ aur:
     - lastpass-cli
     - massren
     - pulsemixer-git
-    #- android-studio
-    #- magic-wormhole
     - droopy-git
-    #- shotcut
-    #- waterfox-bin
     - google-chrome
     - slack-desktop
-    #- gcalcli
     - swagger-codegen-git
     - pandoc-bin
     - tor-browser-en
     - gallery-dl
-    #- ta-lib
     - flashplayer-standalone
-    #- nodejs-pxder
     - google-cloud-sdk
-    - teamviewer
     - erd-git
+    #- teamviewer
+    #- android-studio
+    #- magic-wormhole
+    #- shotcut
+    #- gcalcli
+    #- ta-lib
+    #- nodejs-pxder
 
 docker:
   group:
