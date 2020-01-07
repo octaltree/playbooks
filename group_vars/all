@@ -74,6 +74,7 @@ pacman:
       - convmv # ファイル名文字コード
       - alacritty
       - alacritty-terminfo
+      - git-lfs
       #- rclone
       #- moreutils
       #- gnuplot
