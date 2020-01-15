@@ -157,6 +157,7 @@ aur:
     - flashplayer-standalone
     - google-cloud-sdk
     - erd-git
+    - pgformatter-git
     #- teamviewer
     #- android-studio
     #- magic-wormhole
