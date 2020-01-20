@@ -75,6 +75,7 @@ pacman:
       - alacritty
       - alacritty-terminfo
       - git-lfs
+      - neomutt
       #- rclone
       #- moreutils
       #- gnuplot
@@ -144,7 +145,6 @@ aur:
   packages:
     - ttf-ricty
     - translate-shell
-    - lastpass-cli
     - massren
     - pulsemixer-git
     - droopy-git
@@ -157,7 +157,7 @@ aur:
     - flashplayer-standalone
     - google-cloud-sdk
     - erd-git
-    - pgformatter-git
+    #- pgformatter-git
     #- teamviewer
     #- android-studio
     #- magic-wormhole
@@ -165,6 +165,7 @@ aur:
     #- gcalcli
     #- ta-lib
     #- nodejs-pxder
+    #- lastpass-cli
 
 docker:
   group:
