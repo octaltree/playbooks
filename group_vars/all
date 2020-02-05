@@ -76,6 +76,7 @@ pacman:
       - alacritty-terminfo
       - git-lfs
       - neomutt
+      - graphviz
       #- rclone
       #- moreutils
       #- gnuplot
@@ -156,7 +157,7 @@ aur:
     - gallery-dl
     - flashplayer-standalone
     - google-cloud-sdk
-    - erd-git
+    #- erd-git
     #- pgformatter-git
     #- teamviewer
     #- android-studio
