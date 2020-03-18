@@ -77,6 +77,8 @@ pacman:
       - git-lfs
       - neomutt
       - graphviz
+      - libmagick6
+      - redis
       #- rclone
       #- moreutils
       #- gnuplot
@@ -157,6 +159,8 @@ aur:
     - gallery-dl
     - flashplayer-standalone
     - google-cloud-sdk
+    - rbenv
+    - ruby-build
     #- erd-git
     #- pgformatter-git
     #- teamviewer
