@@ -142,6 +142,7 @@ pacman:
       - pavucontrol
       - thunderbird
       - vlc
+      - peek
       #- chromium
       #- inkscape
 aur:
