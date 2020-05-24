@@ -120,7 +120,7 @@ pacman:
       #- python-pip
       #- python2-pip
       #- npm
-      #- composer
+      - composer
       #- php-intl
       #- php-sqlite
       #- emscripten
