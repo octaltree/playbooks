@@ -121,6 +121,7 @@ pacman:
       #- python2-pip
       #- npm
       - composer
+      - php-pgsql
       #- php-intl
       #- php-sqlite
       #- emscripten
