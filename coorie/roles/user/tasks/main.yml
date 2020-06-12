@@ -1,0 +1,38 @@
+- name: running_user
+  shell: id -un
+  register: running_user
+  changed_when: False
+
+- name: Ensure running by target user
+  fail: msg="not target user"
+  when: not(running_user.stdout == user.name)
+
+- pacman: name=xdg-user-dirs state=latest
+
+- name: Create dirs
+  file:
+    path: /home/{{ user.name }}/{{ item }}
+    state: directory
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+    mode: 0755
+  with_items:
+    - workspace
+    - bin
+    - .local
+    - storage/repos
+    - storage/music
+    - storage/pictures
+    - storage/videos
+    - storage/public
+    - storage/desktop
+    - storage/templates
+    - storage/wallpapers
+    - .config
+    - .ssh
+
+- name: Copy user-dirs.dirs
+  copy:
+    src: user-dirs.dirs
+    dest: /home/{{ user.name }}/.config/user-dirs.dirs
+  notify: Update user-dirs
