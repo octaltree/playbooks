@@ -1,0 +1,5 @@
+---
+#- name: pacman
+#- name: aur
+#  aur:
+#    use: yay
