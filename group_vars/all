@@ -31,6 +31,7 @@ pm:
   npm:
     - neovim
     - pxder
+    - create-react-app
   stack:
     - ghc-mod
     - yesod-bin
