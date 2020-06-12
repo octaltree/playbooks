@@ -40,6 +40,7 @@ pacman:
   packages:
     env:
       - ansible
+      - yay
       - base-devel
       - coreutils
       - bind-tools
