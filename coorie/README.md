@@ -1,7 +1,7 @@
 # coorieの構成管理
-python3とansibleが必要
-このディレクトリをupdate.shに書く
-$ update.sh
+ansible動作環境が必要
+$ ansible-galaxy install -r requirements.yml --force
+$ ansible-playbook play.yml
 
 ## TODO
 * gitのcloneとpull

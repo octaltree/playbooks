@@ -1,0 +1,17 @@
+- name: Clone dotfiles
+  git:
+    repo: https://github.com/octaltree/dotfiles
+    dest: /home/{{ user.name }}/.dotfiles
+    update: no
+
+- name: Set remote dotfiles
+  git:
+    repo: github.com:octaltree/dotfiles
+    dest: /home/{{ user.name }}/.dotfiles
+    update: yes
+  ignore_errors: True
+
+- name: rcin deploy
+  shell: cd /home/{{ user.name }}/.dotfiles && ./rcin deploy > /dev/null && ls /home/{{ user.name }}
+  register: rcin
+  changed_when: '"dotfilesbak" in rcin.stdout'
