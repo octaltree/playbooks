@@ -1,0 +1,12 @@
+---
+- name: Check for TRIM support
+  shell: "hdparm -I /dev/sda | grep TRIM"
+  become: yes
+  register: hdparm
+  ignore_errors: True
+  changed_when: False
+
+- name: Enable and start weekly filesystem TRIM timer
+  systemd: name=fstrim.timer enabled=yes state=started daemon_reload=yes
+  become: yes
+  when: "hdparm.rc == 0"

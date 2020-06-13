@@ -28,6 +28,9 @@ pacman:
     - nginx
     - sox
     - lsof
+    - docker
+    - docker-compose
+    - hdparm # ssdのため fstrim
     - convmv # ファイル名文字コード
     - oath-toolkit # 2段階認証 otw.sh
     - zbar # バーコード zbarimgコマンド
@@ -37,6 +40,8 @@ pacman:
     - alacritty
     - git-lfs
     - translate-shell
+    - texlive-most
+    - texlive-langjapanese
     - mariadb
     - libmariadbclient
     - mariadb-clients
@@ -65,7 +70,8 @@ pacman:
     - thunderbird
     - vlc
     - peek
-  absent: []
+  absent:
+    - unzip
 
 aur:
   present:

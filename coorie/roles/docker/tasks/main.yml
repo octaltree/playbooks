@@ -1,0 +1,8 @@
+---
+- name: Join docker
+  user: name={{ user.name }}  groups=docker append=yes
+  become: yes
+
+- name: Enable and start docker
+  systemd: name=docker enabled=yes state=started daemon_reload=yes
+  become: yes
