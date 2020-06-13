@@ -10,7 +10,7 @@ pacman:
     - base-devel
     - coreutils
     - bind-tools
-    - net-tools
+    - iproute2
     - openbsd-netcat
     - curl
     - wget
@@ -20,19 +20,20 @@ pacman:
     - tmux
     - fzf
     - zsh
+    - jq
+    - zip
+    - unrar
     - imagemagick
     - libmagick6
-    - unrar
-    - jq
     - nginx
     - sox
+    - lsof
+    - convmv # ファイル名文字コード
     - oath-toolkit # 2段階認証 otw.sh
     - zbar # バーコード zbarimgコマンド
     - downgrade
     - youtube-dl
-    - lsof
     - gnuplot
-    - convmv # ファイル名文字コード
     - alacritty
     - git-lfs
     - translate-shell
@@ -50,7 +51,6 @@ pacman:
     - python2
     - yarn
     - clang
-    - composer
     - xorg-xbacklight
     - xorg-xrandr
     - xclip
@@ -72,5 +72,6 @@ aur:
     - ttf-ricty
     - massren
     - gallery-dl
+    - unzip-iconv
     - flashplayer-standalone
   absent: []
