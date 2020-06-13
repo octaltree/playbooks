@@ -70,6 +70,8 @@ pacman:
     - thunderbird
     - vlc
     - peek
+    - virtualbox
+    - linux54-virtualbox-host-modules
   absent:
     - unzip
 
@@ -81,4 +83,5 @@ aur:
     - gallery-dl
     - unzip-iconv
     - flashplayer-standalone
+    - virtualbox-ext-oracle
   absent: []

@@ -8,3 +8,4 @@ $ update.sh
 * zsh zplugin
 * tmux tpm
 * neovim
+* lang

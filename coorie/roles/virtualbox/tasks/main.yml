@@ -1,0 +1,7 @@
+- name: Add user group
+  user: user={{ user.name }} groups={{ item }} append=yes
+  with_items:
+    - disk
+    - vboxusers
+  become: yes
+  notify: modprobe

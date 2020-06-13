@@ -1,0 +1,2 @@
+- name: modprobe
+  shell: modprobe vboxdrv

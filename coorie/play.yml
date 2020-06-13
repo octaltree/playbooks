@@ -4,9 +4,10 @@
   roles:
     - kewlfft.aur
     - user
-      #- pac
+    - pac
 
     - grub
     - ssd
     - lidswitch
     - docker
+    - virtualbox
