@@ -3,5 +3,5 @@
   gather_facts: no
   roles:
     - kewlfft.aur
-    - pac
     - user
+    - pac

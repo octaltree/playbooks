@@ -7,7 +7,7 @@
   fail: msg="not target user"
   when: not(running_user.stdout == user.name)
 
-- pacman: name=xdg-user-dirs state=latest
+- pacman: name=xdg-user-dirs state=present
 
 - name: Create dirs
   file:
@@ -20,6 +20,8 @@
     - workspace
     - bin
     - .local
+    - .config
+    - .ssh
     - storage/repos
     - storage/music
     - storage/pictures
@@ -28,8 +30,6 @@
     - storage/desktop
     - storage/templates
     - storage/wallpapers
-    - .config
-    - .ssh
 
 - name: Copy user-dirs.dirs
   copy:
