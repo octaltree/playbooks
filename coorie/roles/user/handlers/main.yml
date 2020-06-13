@@ -1,2 +1,5 @@
+- name: not target user
+  fail: msg="not target user"
+
 - name: Update user-dirs
   shell: xdg-user-dirs-update

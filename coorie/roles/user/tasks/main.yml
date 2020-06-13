@@ -1,11 +1,8 @@
 - name: running_user
   shell: id -un
   register: running_user
-  changed_when: False
-
-- name: Ensure running by target user
-  fail: msg="not target user"
-  when: not(running_user.stdout == user.name)
+  changed_when: not(running_user.stdout == user.name)
+  notify: not target user
 
 - pacman: name=xdg-user-dirs state=present
 
