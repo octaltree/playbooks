@@ -84,4 +84,5 @@ aur:
     - unzip-iconv
     - flashplayer-standalone
     - virtualbox-ext-oracle
+    - nodejs-pxder
   absent: []
