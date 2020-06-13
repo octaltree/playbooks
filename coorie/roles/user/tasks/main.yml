@@ -36,3 +36,9 @@
     src: user-dirs.dirs
     dest: /home/{{ user.name }}/.config/user-dirs.dirs
   notify: Update user-dirs
+
+- name: Copy user-dirs.locale
+  copy:
+    src: user-dirs.locale
+    dest: /home/{{ user.name }}/.config/user-dirs.locale
+  notify: Update user-dirs
