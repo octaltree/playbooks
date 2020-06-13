@@ -1,5 +1,30 @@
 ---
-#- name: pacman
-#- name: aur
-#  aur:
-#    use: yay
+- name: pacman upgrade
+  pacman:
+    update_cache: yes
+    upgrade: yes
+  become: yes
+
+- name: pacman present
+  pacman:
+    state: present
+    name: "{{ pacman.present }}"
+  become: yes
+
+- name: pacman absent
+  pacman:
+    state: absent
+    name: "{{ pacman.absent }}"
+  become: yes
+
+- name: aur upgrade
+  aur:
+    use: yay
+    upgrade: yes
+    aur_only: yes
+
+- name: aur present
+  aur:
+    use: yay
+    state: present
+    name: "{{ aur.present }}"

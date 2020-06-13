@@ -4,4 +4,4 @@
   roles:
     - kewlfft.aur
     - pac
-    - {role: user}
+    - user

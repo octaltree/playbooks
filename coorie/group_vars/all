@@ -2,6 +2,75 @@ user:
   name: octaltree
   group: octaltree
 
-pacman: []
+pacman:
+  present:
+    - ansible
+    - git
+    - yay
+    - base-devel
+    - coreutils
+    - bind-tools
+    - net-tools
+    - openbsd-netcat
+    - curl
+    - wget
+    - bc
+    - rsync
+    - the_silver_searcher
+    - tmux
+    - fzf
+    - zsh
+    - imagemagick
+    - libmagick6
+    - unrar
+    - jq
+    - nginx
+    - sox
+    - oath-toolkit # 2段階認証 otw.sh
+    - zbar # バーコード zbarimgコマンド
+    - downgrade
+    - youtube-dl
+    - lsof
+    - gnuplot
+    - convmv # ファイル名文字コード
+    - alacritty
+    - git-lfs
+    - translate-shell
+    - mariadb
+    - libmariadbclient
+    - mariadb-clients
+    - postgresql
+    - postgresql-libs
+    - fcitx
+    - fcitx-im
+    - fcitx-mozc
+    - fcitx-configtool
+    - cmake
+    - python
+    - python2
+    - yarn
+    - clang
+    - composer
+    - xorg-xbacklight
+    - xorg-xrandr
+    - xclip
+    - redshift
+    - firefox
+    - gimp
+    - mpv
+    - gpicview
+    - libreoffice-still
+    - evince
+    - audacity
+    - thunderbird
+    - vlc
+    - peek
+  absent: []
 
-aur: []
+aur:
+  present:
+    - ttf-ricty
+    - massren
+    - gallery-dl
+    - flashplayer-standalone
+  absent: []

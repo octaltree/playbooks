@@ -4,7 +4,6 @@ python3とansibleが必要
 $ update.sh
 
 ## TODO
-* パッケージ
 * gitのcloneとpull
 * zsh zplugin
 * tmux tpm
