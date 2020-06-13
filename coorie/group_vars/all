@@ -70,6 +70,7 @@ pacman:
 aur:
   present:
     - ttf-ricty
+    - neovim-git
     - massren
     - gallery-dl
     - unzip-iconv
