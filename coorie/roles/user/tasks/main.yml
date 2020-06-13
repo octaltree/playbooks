@@ -4,7 +4,20 @@
   changed_when: not(running_user.stdout == user.name)
   notify: not target user
 
-- pacman: name=xdg-user-dirs state=present
+- name: pacman zsh
+  pacman: name=zsh state=present
+
+- stat: path=/usr/bin/zsh
+  register: zsh
+
+- name: default shell
+  user:
+    name: "{{ user.name }}"
+    shell: /usr/bin/zsh
+  when: zsh.stat.xusr
+
+- name: pacman xdg-user-dirs
+  pacman: name=xdg-user-dirs state=present
 
 - name: Create dirs
   file:

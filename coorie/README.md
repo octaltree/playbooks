@@ -4,7 +4,6 @@ $ ansible-galaxy install -r requirements.yml --force
 $ ansible-playbook play.yml
 
 ## TODO
-* gitのcloneとpull
 * zsh zplugin
 * tmux tpm
 * neovim
