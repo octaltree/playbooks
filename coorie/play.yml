@@ -5,7 +5,7 @@
     - kewlfft.aur
     - user
     - pac
-    #- dotfiles
+    - dotfiles
     - grub
     - ssd
     - lidswitch
