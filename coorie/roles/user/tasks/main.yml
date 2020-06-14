@@ -1,8 +1,8 @@
 - name: running_user
   shell: id -un
   register: running_user
-  changed_when: not(running_user.stdout == user.name)
-  notify: not target user
+  changed_when: False
+  failed_when: not(running_user.stdout == user.name)
 
 - name: pacman zsh
   pacman: name=zsh state=present
