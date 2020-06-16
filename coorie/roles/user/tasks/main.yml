@@ -29,10 +29,11 @@
   with_items:
     - workspace
     - bin
-    - .local
+    - prod
+    - hub/own
+    - hub/others
     - .config
     - .ssh
-    - storage/repos
     - storage/music
     - storage/pictures
     - storage/videos
