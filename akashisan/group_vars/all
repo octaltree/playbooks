@@ -15,17 +15,18 @@ pm:
   gem:
     - neovim
   rustup:
-    - rust-src
+    #- rust-src
     - rustfmt
     - rls
-    - rust-analysis
+    #- rust-analysis
   cargo: []
-    #- diesel_cli
-    #- cargo-edit
-    #- cargo-expand
-    #- cargo-watch
-    #- watchexec
-    #- racer
+    - diesel_cli
+    - cargo-edit
+    - cargo-expand
+    - cargo-watch
+    - watchexec
+    - cargo-update
+    - cargo-script
   cargo_nightly: []
   composer: []
   npm:
