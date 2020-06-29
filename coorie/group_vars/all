@@ -34,6 +34,7 @@ pacman:
     - convmv # ファイル名文字コード
     - oath-toolkit # 2段階認証 otw.sh
     - zbar # バーコード zbarimgコマンド
+    - watchexec
     - downgrade
     - youtube-dl
     - gnuplot
@@ -42,11 +43,20 @@ pacman:
     - translate-shell
     - texlive-most
     - texlive-langjapanese
+      # 言語
+    - cmake
+    - clang
+    - rustup
+    - python
+    - python2
+    - yarn
+      # DB
     - mariadb
     - libmariadbclient
     - mariadb-clients
     - postgresql
     - postgresql-libs
+      # GUIっぽいもの
     - fcitx
     - fcitx-im
     - fcitx-mozc
@@ -67,12 +77,6 @@ pacman:
     - peek
     - virtualbox
     - linux54-virtualbox-host-modules
-      # 言語
-    - cmake
-    - python
-    - python2
-    - yarn
-    - clang
   absent:
     - unzip
 
@@ -85,7 +89,6 @@ aur:
     - unzip-iconv
     - flashplayer-standalone
     - virtualbox-ext-oracle
-    - nodejs-pxder
   absent: []
 
 # vim: ft=yaml
