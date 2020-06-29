@@ -51,11 +51,6 @@ pacman:
     - fcitx-im
     - fcitx-mozc
     - fcitx-configtool
-    - cmake
-    - python
-    - python2
-    - yarn
-    - clang
     - xorg-xbacklight
     - xorg-xrandr
     - xclip
@@ -72,6 +67,12 @@ pacman:
     - peek
     - virtualbox
     - linux54-virtualbox-host-modules
+      # 言語
+    - cmake
+    - python
+    - python2
+    - yarn
+    - clang
   absent:
     - unzip
 
@@ -86,3 +87,5 @@ aur:
     - virtualbox-ext-oracle
     - nodejs-pxder
   absent: []
+
+# vim: ft=yaml
