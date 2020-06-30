@@ -24,7 +24,6 @@ pacman:
     - zip
     - unrar
     - imagemagick
-    - libmagick6
     - nginx
     - sox
     - lsof
