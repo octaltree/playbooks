@@ -43,13 +43,13 @@ pacman:
     - translate-shell
     - texlive-most
     - texlive-langjapanese
+    - python-neovim
+    - python2-neovim
       # 言語
     - cmake
     - clang
     - rustup
     - python
-    - python2
-    - yarn
       # DB
     - mariadb
     - libmariadbclient
@@ -83,10 +83,14 @@ pacman:
 aur:
   present:
     - ttf-ricty
-    - neovim-git
     - massren
-    - gallery-dl
+    - neovim-git
+    - ruby-neovim
+    - nodejs-neovim
+    - nodejs-pxder
     - unzip-iconv
+    - google-cloud-sdk
+    - google-chrome
     - flashplayer-standalone
     - virtualbox-ext-oracle
   absent: []

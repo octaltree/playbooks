@@ -12,8 +12,7 @@ pm:
   pip: []
   pip2:
     - virtualenv
-  gem:
-    - neovim
+  gem: []
   rustup:
     #- rust-src
     - rustfmt
@@ -30,8 +29,6 @@ pm:
   cargo_nightly: []
   composer: []
   npm:
-    - neovim
-    - pxder
     - create-react-app
   stack:
     - ghc-mod
@@ -166,6 +163,9 @@ aur:
     - google-cloud-sdk
     - rbenv
     - ruby-build
+    - ruby-neovim
+    - nodejs-neovim
+    - nodejs-pxder
     #- erd-git
     #- pgformatter-git
     #- teamviewer
