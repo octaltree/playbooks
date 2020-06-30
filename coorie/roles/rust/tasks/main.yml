@@ -1,0 +1,39 @@
+- name: rustup stable
+  shell: rustup install stable
+  register: stable
+  changed_when: '"unchanged" not in stable.stdout'
+
+- name: rustup nightly
+  shell: rustup install nightly
+  register: nightly
+  changed_when: '"unchanged" not in nightly.stdout'
+
+- name: rustup component
+  shell: rustup --verbose component add "{{ item }}"
+  with_items:
+    - rls
+    - rustfmt
+  register: component
+  changed_when: '"is up to date" not in component.stderr'
+
+- name: cargo snippet
+  shell: cargo install cargo-snippet --features="binaries"
+  register: b
+  changed_when: '"is already installed" not in b.stderr'
+
+- name: cargo install
+  shell: cargo install "{{ item }}"
+  with_items:
+    - watchexec
+    - cargo-edit
+    - cargo-expand
+    - cargo-watch
+    - cargo-update
+    - cargo-script
+  register: install
+  changed_when: '"is already installed" not in install.stderr'
+
+- name: cargo update
+  shell: cargo install-update --all
+  register: update
+  changed_when: '"updated 0 packages" not in update.stdout'

@@ -33,7 +33,6 @@ pacman:
     - convmv # ファイル名文字コード
     - oath-toolkit # 2段階認証 otw.sh
     - zbar # バーコード zbarimgコマンド
-    - watchexec
     - downgrade
     - youtube-dl
     - gnuplot
