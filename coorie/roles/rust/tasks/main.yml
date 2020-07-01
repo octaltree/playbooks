@@ -13,6 +13,8 @@
   with_items:
     - rls
     - rustfmt
+    - rust-src
+    - rust-analysis
   register: component
   changed_when: '"is up to date" not in component.stderr'
 
