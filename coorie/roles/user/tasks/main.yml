@@ -30,9 +30,8 @@
   with_items:
     - workspace
     - bin
-    - prod
-    - hub/own
-    - hub/others
+    - chest/own
+    - chest/others
     - .config
     - .ssh
     - storage/music
