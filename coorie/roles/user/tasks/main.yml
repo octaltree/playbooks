@@ -14,6 +14,7 @@
   user:
     name: "{{ user.name }}"
     shell: /usr/bin/zsh
+  become: yes
   when: zsh.stat.xusr
 
 - name: pacman xdg-user-dirs

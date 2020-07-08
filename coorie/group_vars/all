@@ -27,6 +27,7 @@ pacman:
     - nginx
     - sox
     - lsof
+    - w3m
     - docker
     - docker-compose
     - hdparm # ssdのため fstrim

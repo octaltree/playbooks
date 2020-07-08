@@ -79,6 +79,7 @@ pacman:
       - graphviz
       - libmagick6
       - redis
+      - w3m
       #- rclone
       #- moreutils
       #- gnuplot
