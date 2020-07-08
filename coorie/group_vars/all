@@ -43,7 +43,6 @@ pacman:
     - texlive-most
     - texlive-langjapanese
     - python-neovim
-    - python2-neovim
       # 言語
     - cmake
     - clang
