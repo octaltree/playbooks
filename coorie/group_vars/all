@@ -74,9 +74,10 @@ pacman:
     - vlc
     - peek
     - virtualbox
-    - linux54-virtualbox-host-modules
+    - linux56-virtualbox-host-modules
   absent:
     - unzip
+    - linux54-virtualbox-host-modules
 
 aur:
   present:
