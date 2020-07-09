@@ -1,3 +1,4 @@
 ---
 - name: Update config
   shell: update-grub
+  become: yes

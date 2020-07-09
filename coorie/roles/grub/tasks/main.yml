@@ -5,3 +5,4 @@
     regexp: '^[ 	]*GRUB_TIMEOUT[ 	]*=[ 	]*[0-9]+$'
     line: 'GRUB_TIMEOUT=1'
   notify: Update config
+  # TODO: 行がないときも足す
