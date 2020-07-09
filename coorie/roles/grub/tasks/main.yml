@@ -5,4 +5,5 @@
     regexp: '^[ 	]*GRUB_TIMEOUT[ 	]*=[ 	]*[0-9]+$'
     insertafter: EOF
     line: 'GRUB_TIMEOUT=1'
+  become: yes
   notify: Update config
