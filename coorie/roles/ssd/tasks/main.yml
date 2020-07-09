@@ -1,11 +1,11 @@
 ---
 - name: Check for TRIM support
-  shell: hdparm -I /dev/sda
+  shell: nvme id-ctrl /dev/nvme0 -H
   become: yes
-  register: hdparm
+  register: info
   changed_when: False
 
 - name: weekly filesystem TRIM timer
   systemd: name=fstrim.timer enabled=yes state=started daemon_reload=yes
-  when: '"TRIM" in hdparm.stdout'
+  when: '"Data Set Management Supported" in info.stdout'
   become: yes
