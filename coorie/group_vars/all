@@ -44,11 +44,13 @@ pacman:
     - texlive-langjapanese
     - python-neovim
     - nvme-cli
+    - android-tools
       # 言語
     - cmake
     - clang
     - rustup
     - python
+    - yarn
       # DB
     - mariadb
     - libmariadbclient
@@ -60,7 +62,6 @@ pacman:
     - fcitx-im
     - fcitx-mozc
     - fcitx-configtool
-    - xorg-xbacklight
     - xorg-xrandr
     - xclip
     - redshift
@@ -79,6 +80,7 @@ pacman:
   absent:
     - unzip
     - linux54-virtualbox-host-modules
+    - xorg-xbacklight
 
 aur:
   present:
@@ -93,6 +95,8 @@ aur:
     - google-chrome
     - flashplayer-standalone
     - virtualbox-ext-oracle
+    - slack-desktop
+    - light-git
   absent: []
 
 # vim: ft=yaml
