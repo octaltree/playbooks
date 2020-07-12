@@ -45,6 +45,7 @@ pacman:
     - python-neovim
     - nvme-cli
     - android-tools
+    - sshfs
       # 言語
     - cmake
     - clang
@@ -81,6 +82,7 @@ pacman:
     - unzip
     - linux54-virtualbox-host-modules
     - xorg-xbacklight
+    - inotify-tools
 
 aur:
   present:
@@ -97,6 +99,7 @@ aur:
     - virtualbox-ext-oracle
     - slack-desktop
     - light-git
+    - pulsemixer-git
   absent: []
 
 # vim: ft=yaml
