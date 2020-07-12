@@ -9,6 +9,7 @@ pacman:
     - yay
     - base-devel
     - coreutils
+    - moreutils
     - bind-tools
     - iproute2
     - openbsd-netcat
