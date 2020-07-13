@@ -30,8 +30,7 @@
   with_items:
     - workspace
     - bin
-    - chest/own
-    - chest/others
+    - prod
     - .config
     - .ssh
     - storage/music
@@ -41,6 +40,8 @@
     - storage/desktop
     - storage/templates
     - storage/wallpapers
+    - storage/chest/own
+    - storage/chest/others
 
 - name: Copy user-dirs.dirs
   copy:
