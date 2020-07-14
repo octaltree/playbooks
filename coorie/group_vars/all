@@ -47,6 +47,7 @@ pacman:
     - nvme-cli
     - android-tools
     - sshfs
+    - tk # for matplotlib
       # 言語
     - cmake
     - clang
