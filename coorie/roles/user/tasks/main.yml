@@ -54,3 +54,5 @@
     src: user-dirs.locale
     dest: /home/{{ user.name }}/.config/user-dirs.locale
   notify: Update user-dirs
+
+- meta: flush_handlers
