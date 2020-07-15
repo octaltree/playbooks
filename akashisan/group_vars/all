@@ -18,7 +18,7 @@ pm:
     - rustfmt
     - rls
     #- rust-analysis
-  cargo: []
+  cargo:
     - diesel_cli
     - cargo-edit
     - cargo-expand
