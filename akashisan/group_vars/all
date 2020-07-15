@@ -54,9 +54,9 @@ pacman:
       - tmux
       - fzf
       - zsh
-      - neovim
+      #- neovim
       - python-neovim
-      - python2-neovim
+      #- python2-neovim
       - imagemagick
       - unrar
       - zip
@@ -73,7 +73,7 @@ pacman:
       - gnuplot
       - convmv # ファイル名文字コード
       - alacritty
-      - alacritty-terminfo
+      #- alacritty-terminfo
       - git-lfs
       - neomutt
       - graphviz
@@ -158,7 +158,7 @@ aur:
     - slack-desktop
     - swagger-codegen-git
     - pandoc-bin
-    - tor-browser-en
+    - tor-browser
     - gallery-dl
     - flashplayer-standalone
     - google-cloud-sdk
@@ -167,6 +167,7 @@ aur:
     - ruby-neovim
     - nodejs-neovim
     - nodejs-pxder
+    - neovim-git
     #- erd-git
     #- pgformatter-git
     #- teamviewer
