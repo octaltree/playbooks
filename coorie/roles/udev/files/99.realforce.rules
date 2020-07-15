@@ -1,0 +1,4 @@
+ACTION=="add", KERNEL=="event[0-9]*", SUBSYSTEM=="input",\
+  ATTRS{name}=="Topre Corporation Realforce 87",\
+  ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/octaltree/.Xauthority",\
+  RUN+="/home/octaltree/prod/handyScript/kbd_udev"

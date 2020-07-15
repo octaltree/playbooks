@@ -1,0 +1,6 @@
+- name: Copy rule
+  copy:
+    src: 99.realforce.rules
+    dest: /etc/udev/rules.d/99.realforce.rules
+  become: yes
+  notify: Reload udev
