@@ -41,8 +41,6 @@ pacman:
     - alacritty
     - git-lfs
     - translate-shell
-    - texlive-most
-    - texlive-langjapanese
     - python-neovim
     - nvme-cli
     - android-tools
@@ -54,6 +52,11 @@ pacman:
     - rustup
     - python
     - yarn
+    - texlive-most
+    - texlive-langjapanese
+    - bash-language-server
+    - python-language-server
+    - texlab
       # DB
     - mariadb
     - libmariadbclient
@@ -102,6 +105,8 @@ aur:
     - slack-desktop
     - light-git
     - pulsemixer-git
+    - vscode-html-languageserver-bin
+    - vim-language-server
   absent: []
 
 # vim: ft=yaml
