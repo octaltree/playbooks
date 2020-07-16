@@ -106,7 +106,6 @@ aur:
     - light-git
     - pulsemixer-git
     - vscode-html-languageserver-bin
-    - vim-language-server
   absent: []
 
 # vim: ft=yaml
