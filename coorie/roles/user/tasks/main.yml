@@ -40,8 +40,8 @@
     - storage/desktop
     - storage/templates
     - storage/wallpapers
-    - storage/chest/own
-    - storage/chest/others
+    - storage/repos/own
+    - storage/repos/others
 
 - name: Copy user-dirs.dirs
   copy:
