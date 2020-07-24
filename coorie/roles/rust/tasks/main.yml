@@ -12,6 +12,7 @@
   shell: rustup --verbose component add "{{ item }}"
   with_items:
     - rls
+    - clippy
     - rustfmt
     - rust-src
     - rust-analysis
@@ -32,6 +33,7 @@
     - cargo-watch
     - cargo-update
     - cargo-script
+    - diesel_cli
   register: install
   changed_when: '"is already installed" not in install.stderr'
 
