@@ -59,8 +59,8 @@ pacman:
     - texlab
       # DB
     - mariadb
-    - libmariadbclient
     - mariadb-clients
+    - mariadb-libs
     - postgresql
     - postgresql-libs
       # GUIっぽいもの
