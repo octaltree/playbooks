@@ -58,7 +58,7 @@ pacman:
     - python-language-server
     - texlab
       # DB
-    - mariadb
+    #- mariadb
     - mariadb-clients
     - mariadb-libs
     - postgresql
