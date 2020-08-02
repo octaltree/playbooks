@@ -34,6 +34,7 @@
     - cargo-update
     - cargo-script
     - diesel_cli
+    - wasm-pack
   register: install
   changed_when: '"is already installed" not in install.stderr'
 
