@@ -57,6 +57,7 @@ pacman:
     - bash-language-server
     - python-language-server
     - texlab
+    - mingw-w64-gcc # rustでクロスコンパイル用
       # DB
     #- mariadb
     - mariadb-clients
@@ -83,6 +84,7 @@ pacman:
     - vlc
     - peek
     - virtualbox
+    - linux-latest-virtualbox-host-modules
   absent:
     - unzip
     - linux54-virtualbox-host-modules
