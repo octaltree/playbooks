@@ -10,8 +10,7 @@ dotfiles:
 
 pm:
   pip: []
-  pip2:
-    - virtualenv
+  pip2: []
   gem: []
   rustup:
     #- rust-src
