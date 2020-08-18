@@ -12,7 +12,7 @@
   pacman: name={{ virtualbox.host }}
 
 - name: Install virtualbox-ext-oracle
-  shell: yay -S --needed --noconfirm virtualbox-ext-oracle
+  shell: yay -S --needed --noconfirm virtualbox-ext-oracle-manjaro
   become: yes
   become_user: "{{ user.name }}"
   tags:
