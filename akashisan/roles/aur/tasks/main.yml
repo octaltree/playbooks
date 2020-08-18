@@ -1,5 +1,5 @@
 ---
-- name: Install with yaourt
+- name: Install with yay
   shell: yay -S --needed --noconfirm "{{ item }}"
   with_items: "{{ aur.packages }}"
   become: yes

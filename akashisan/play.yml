@@ -2,14 +2,14 @@
 - hosts: localhost
   roles:
     - {role: pacman, tags: ['pacman']}
-    - {role: aur, tags: ['aur', 'yaourt']}
+    - {role: aur, tags: ['aur', 'yay']}
     - {role: user, tags: ['user']}
     - {role: lang, tags: ['lang']}
     - {role: dotfiles, tags: ['dotfiles']}
     - {role: neovim, tags: ['neovim']}
     - {role: ssd, tags: ['ssd']}
     - {role: grub, tags: ['grub']}
-    - {role: unzip, tags: ['unzip', 'yaourt']}
+    - {role: unzip, tags: ['unzip', 'yay']}
     #- {role: tor, tags: ['tor']}
     - {role: docker, tags: ['docker']}
     - {role: virtualbox, tags: ['virtualbox']}

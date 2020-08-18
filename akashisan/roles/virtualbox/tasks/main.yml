@@ -12,11 +12,11 @@
   pacman: name={{ virtualbox.host }}
 
 - name: Install virtualbox-ext-oracle
-  shell: yaourt -S --needed --noconfirm virtualbox-ext-oracle
+  shell: yay -S --needed --noconfirm virtualbox-ext-oracle
   become: yes
   become_user: "{{ user.name }}"
   tags:
-    - yaourt
+    - yay
 
 - name: modprobe vboxdrv
   shell: modprobe vboxdrv
