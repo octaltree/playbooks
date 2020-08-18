@@ -156,7 +156,7 @@ aur:
     - droopy-git
     - google-chrome
     - slack-desktop
-    - swagger-codegen-git
+    #- swagger-codegen-git
     - pandoc-bin
     - tor-browser
     - gallery-dl
