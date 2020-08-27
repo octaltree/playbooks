@@ -52,6 +52,7 @@ pacman:
     - rustup
     - python
     - yarn
+    - stack
     - texlive-most
     - texlive-langjapanese
     - bash-language-server
