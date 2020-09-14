@@ -110,6 +110,7 @@ aur:
     - light-git
     - pulsemixer-git
     - vscode-html-languageserver-bin
+    - pandoc-bin
   absent: []
 
 # vim: ft=yaml
