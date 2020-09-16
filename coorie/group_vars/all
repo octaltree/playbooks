@@ -115,7 +115,6 @@ aur:
     - open-jtalk
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
-    - mbrola
   absent: []
 
 # vim: ft=yaml
