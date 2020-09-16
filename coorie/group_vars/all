@@ -111,6 +111,9 @@ aur:
     - pulsemixer-git
     - vscode-html-languageserver-bin
     - pandoc-bin
+    - open-jtalk
+    - open-jtalk-voice-mei
+    - open-jtalk-voice-nitech-jp-atr503-m001
   absent: []
 
 # vim: ft=yaml
