@@ -86,6 +86,7 @@ pacman:
     - peek
     - virtualbox
     - linux-latest-virtualbox-host-modules
+    - mimic
   absent:
     - unzip
     - linux54-virtualbox-host-modules
@@ -114,6 +115,7 @@ aur:
     - open-jtalk
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
+    - mbrola
   absent: []
 
 # vim: ft=yaml
