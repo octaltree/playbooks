@@ -86,7 +86,6 @@ pacman:
     - peek
     - virtualbox
     - linux-latest-virtualbox-host-modules
-    - mimic
   absent:
     - unzip
     - linux54-virtualbox-host-modules
