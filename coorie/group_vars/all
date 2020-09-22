@@ -105,7 +105,7 @@ aur:
     - google-cloud-sdk
     - google-chrome
     - flashplayer-standalone
-    - virtualbox-ext-oracle-manjaro
+    - virtualbox-ext-oracle
     - slack-desktop
     - light-git
     - pulsemixer-git
