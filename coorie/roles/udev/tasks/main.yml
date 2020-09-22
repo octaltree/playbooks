@@ -1,6 +1,20 @@
-- name: Copy rule
+#- name: Copy rule realforce
+#  copy:
+#    src: 99.realforce.rules
+#    dest: /etc/udev/rules.d/99.realforce.rules
+#  become: yes
+#  notify: Reload udev
+
+- name: Copy rule hdmi
   copy:
-    src: 99.realforce.rules
-    dest: /etc/udev/rules.d/99.realforce.rules
+    src: 99.hdmi.rules
+    dest: /etc/udev/rules.d/99.hdmi.rules
+  become: yes
+  notify: Reload udev
+
+- name: Copy rule kbd
+  copy:
+    src: 99.kbd.rules
+    dest: /etc/udev/rules.d/99.kbd.rules
   become: yes
   notify: Reload udev

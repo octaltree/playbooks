@@ -1,0 +1,3 @@
+ACTION=="add", KERNEL=="event[0-9]*", SUBSYSTEM=="input",\
+  ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/octaltree/.Xauthority",\
+  RUN+="/home/octaltree/prod/handyScript/kbd_udev"
