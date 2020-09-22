@@ -167,6 +167,7 @@ aur:
     - nodejs-neovim
     - nodejs-pxder
     - neovim-git
+    - xsv-bin
     #- erd-git
     #- pgformatter-git
     #- teamviewer
