@@ -185,4 +185,4 @@ docker:
     - alpine:latest
 
 virtualbox:
-  host: linux57-virtualbox-host-modules
+  host: linux-latest-virtualbox-host-modules
