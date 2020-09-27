@@ -1,0 +1,6 @@
+lightdmの起動が失敗するようなら
+```
+[LightDM]
+logind-check-graphical=true
+```
+を試す
