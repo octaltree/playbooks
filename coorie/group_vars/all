@@ -86,6 +86,7 @@ pacman:
     - peek
     - virtualbox
     - linux-latest-virtualbox-host-modules
+    - chromium
   absent:
     - unzip
     - linux54-virtualbox-host-modules
