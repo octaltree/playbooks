@@ -116,6 +116,7 @@ aur:
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
     - xsv-bin
+    - anydesk-bin
   absent: []
 
 # vim: ft=yaml
