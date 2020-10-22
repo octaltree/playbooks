@@ -60,7 +60,7 @@ pacman:
     - texlab
     - mingw-w64-gcc # rustでクロスコンパイル用
       # DB
-    #- mariadb
+    - mariadb
     - mariadb-clients
     - mariadb-libs
     - postgresql
@@ -117,6 +117,7 @@ aur:
     - open-jtalk-voice-nitech-jp-atr503-m001
     - xsv-bin
     - anydesk-bin
+    - rust-analyzer-git
   absent: []
 
 # vim: ft=yaml
