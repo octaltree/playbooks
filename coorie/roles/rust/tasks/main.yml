@@ -36,6 +36,7 @@
     - diesel_cli
     - wasm-pack
     - trunk
+    - sqlx-cli
   register: install
   changed_when: '"is already installed" not in install.stderr'
 
