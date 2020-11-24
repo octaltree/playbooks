@@ -59,6 +59,7 @@ pacman:
     - python-language-server
     - texlab
     - mingw-w64-gcc # rustでクロスコンパイル用
+    - musl
       # DB
     - mariadb
     - mariadb-clients
@@ -99,7 +100,6 @@ pacman:
 aur:
   present:
     - ttf-ricty
-    - massren
     - neovim-git
     - ruby-neovim
     - nodejs-neovim
