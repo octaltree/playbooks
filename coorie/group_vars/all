@@ -66,6 +66,7 @@ pacman:
     - mariadb-libs
     - postgresql
     - postgresql-libs
+    - redis
       # GUIっぽいもの
     - fcitx
     - fcitx-im
