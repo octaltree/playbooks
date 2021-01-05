@@ -28,11 +28,12 @@
   shell: cargo install "{{ item }}"
   with_items:
     - watchexec
+    - cargo-watch
     - cargo-edit
     - cargo-expand
-    - cargo-watch
     - cargo-update
     - cargo-script
+    - cargo-swagg
     - diesel_cli
     - wasm-pack
     - trunk
