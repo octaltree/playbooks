@@ -24,6 +24,11 @@
   register: b
   changed_when: '"is already installed" not in b.stderr'
 
+- name: paperclip
+  shell: cargo install paperclip --features="cli"
+  register: b
+  changed_when: '"is already installed" not in b.stderr'
+
 - name: cargo install
   shell: cargo install "{{ item }}"
   with_items:
@@ -33,7 +38,6 @@
     - cargo-expand
     - cargo-update
     - cargo-script
-    - cargo-swagg
     - diesel_cli
     - wasm-pack
     - trunk
