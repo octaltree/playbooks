@@ -9,10 +9,10 @@
     - {role: neovim, tags: ['neovim']}
     - {role: ssd, tags: ['ssd']}
     - {role: grub, tags: ['grub']}
-    - {role: unzip, tags: ['unzip', 'yay']}
+    #- {role: unzip, tags: ['unzip', 'yay']}
     #- {role: tor, tags: ['tor']}
     - {role: docker, tags: ['docker']}
-    - {role: virtualbox, tags: ['virtualbox']}
+    #- {role: virtualbox, tags: ['virtualbox']}
     - {role: lidswitch, tags: ['lidswitch']}
     - {role: tex, tags: ['tex']}
     #- {role: jtalk, tags: ['jtalk']}
