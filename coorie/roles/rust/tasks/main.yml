@@ -37,7 +37,7 @@
     - cargo-edit
     - cargo-expand
     - cargo-update
-    - cargo-script
+    - cargo-play
     - diesel_cli
     - wasm-pack
     - trunk
