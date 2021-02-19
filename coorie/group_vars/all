@@ -46,6 +46,7 @@ pacman:
     - android-tools
     - sshfs
     - tk # for matplotlib
+    - tokei
       # 言語
     - cmake
     - ninja
