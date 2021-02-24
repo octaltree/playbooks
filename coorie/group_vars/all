@@ -47,6 +47,7 @@ pacman:
     - sshfs
     - tk # for matplotlib
     - tokei
+    - pandoc
       # 言語
     - cmake
     - ninja
@@ -115,8 +116,6 @@ aur:
     - slack-desktop
     - light-git
     - pulsemixer-git
-    - vscode-html-languageserver-bin
-    - pandoc-bin
     - open-jtalk
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
