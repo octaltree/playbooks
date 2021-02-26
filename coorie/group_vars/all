@@ -48,6 +48,7 @@ pacman:
     - tk # for matplotlib
     - tokei
     - pandoc
+    - tree-sitter
       # 言語
     - cmake
     - ninja
