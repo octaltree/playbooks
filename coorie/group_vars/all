@@ -49,6 +49,8 @@ pacman:
     - tokei
     - pandoc
     - tree-sitter
+    - util-linux
+    - miscfiles
       # 言語
     - cmake
     - ninja
