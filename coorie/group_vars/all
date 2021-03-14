@@ -51,6 +51,7 @@ pacman:
     - tree-sitter
     - util-linux
     - miscfiles
+    - hyperfine
       # 言語
     - cmake
     - ninja
