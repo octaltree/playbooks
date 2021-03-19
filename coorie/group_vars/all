@@ -52,6 +52,8 @@ pacman:
     - util-linux
     - miscfiles
     - hyperfine
+    - torsocks
+    - torbrowser-launcher
       # 言語
     - cmake
     - ninja
