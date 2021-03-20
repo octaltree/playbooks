@@ -19,11 +19,6 @@
   register: component
   changed_when: '"is up to date" not in component.stderr'
 
-- name: cargo snippet
-  shell: cargo install cargo-snippet --features="binaries"
-  register: b
-  changed_when: '"is already installed" not in b.stderr'
-
 - name: paperclip
   shell: cargo install paperclip --features="cli"
   register: b
