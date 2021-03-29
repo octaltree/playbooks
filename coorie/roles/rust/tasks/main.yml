@@ -37,6 +37,7 @@
     - wasm-pack
     - trunk
     - cargo-tarpaulin
+    - cargo-udeps
   register: install
   changed_when: '"is already installed" not in install.stderr'
 
