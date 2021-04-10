@@ -38,6 +38,8 @@
     - trunk
     - cargo-tarpaulin
     - cargo-udeps
+    - cargo-license
+    - cargo-lichking
   register: install
   changed_when: '"is already installed" not in install.stderr'
 
