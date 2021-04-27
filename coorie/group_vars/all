@@ -130,6 +130,7 @@ aur:
     - anydesk-bin
     - rust-analyzer-git
     - android-studio
+    - todoist
   absent: []
 
 # vim: ft=yaml
