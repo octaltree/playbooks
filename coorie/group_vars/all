@@ -70,6 +70,7 @@ pacman:
     - texlab
     - mingw-w64-gcc # rustでクロスコンパイル用
     - musl
+    - deno
       # DB
     - mariadb
     - mariadb-clients
@@ -111,6 +112,7 @@ pacman:
 aur:
   present:
     - ttf-ricty
+    - ttf-cica
     - neovim-git
     - ruby-neovim
     - nodejs-neovim
@@ -131,6 +133,7 @@ aur:
     - rust-analyzer-git
     - android-studio
     - todoist
+    - typescript-language-server-bin
   absent: []
 
 # vim: ft=yaml
