@@ -136,6 +136,7 @@ aur:
     - android-studio
     - todoist
     - typescript-language-server-bin
+    - bottom-bin
   absent: []
 
 # vim: ft=yaml
