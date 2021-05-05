@@ -129,8 +129,10 @@ aur:
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
     - xsv-bin
+    - tealdeer
     - anydesk-bin
     - rust-analyzer-git
+    - zellij-git
     - android-studio
     - todoist
     - typescript-language-server-bin
