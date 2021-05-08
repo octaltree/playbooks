@@ -98,14 +98,12 @@ pacman:
     - vlc
     - peek
     - virtualbox
-    - linux-latest-virtualbox-host-modules
     - chromium
     - pulseaudio-bluetooth
     - pavucontrol-qt
+    - linux510-virtualbox-host-modules
   absent:
     - unzip
-    - linux54-virtualbox-host-modules
-    #- linux56-virtualbox-host-modules
     - xorg-xbacklight
     - inotify-tools
 
