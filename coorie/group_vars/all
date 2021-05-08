@@ -113,7 +113,6 @@ aur:
     - ttf-cica
     - neovim-git
     - ruby-neovim
-    - nodejs-neovim
     - nodejs-pxder
     - unzip-iconv
     - google-cloud-sdk
