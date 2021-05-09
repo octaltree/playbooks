@@ -27,7 +27,6 @@
 - name: cargo install
   shell: cargo install "{{ item }}"
   with_items:
-    - watchexec
     - cargo-watch
     - cargo-edit
     - cargo-expand
