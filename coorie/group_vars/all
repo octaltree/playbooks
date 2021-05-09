@@ -55,6 +55,7 @@ pacman:
     - hyperfine
     - torsocks
     - torbrowser-launcher
+    - watchexec
       # 言語
     - cmake
     - ninja
