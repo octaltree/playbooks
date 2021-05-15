@@ -72,6 +72,7 @@ pacman:
     - mingw-w64-gcc # rustでクロスコンパイル用
     - musl
     - deno
+    - wabt # wasmのアセンブラ
       # DB
     - mariadb
     - mariadb-clients
