@@ -136,6 +136,7 @@ aur:
     - todoist
     - typescript-language-server-bin
     - bottom-bin
+    - pastel
   absent: []
 
 # vim: ft=yaml
