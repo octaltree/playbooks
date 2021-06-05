@@ -39,7 +39,6 @@ pacman:
     - downgrade
     - youtube-dl
     - gnuplot
-    - alacritty
     - git-lfs
     - translate-shell
     - python-neovim
@@ -137,6 +136,9 @@ aur:
     - typescript-language-server-bin
     - bottom-bin
     - pastel
+    - lua-format-git
+    - luacheck
+    - alacritty-git
   absent: []
 
 # vim: ft=yaml
