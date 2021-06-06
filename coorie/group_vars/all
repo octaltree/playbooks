@@ -61,6 +61,7 @@ pacman:
     - clang
     - rustup
     - python
+    - python-pip
     - yarn
     - stack
     - texlive-most
