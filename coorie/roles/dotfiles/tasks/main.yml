@@ -1,30 +1,3 @@
-- block:
-  - name: Remove dest
-    file:
-      path: /tmp/dotfiles
-      state: absent
-    changed_when: False
-  - name: Clone dotfiles
-    git:
-      repo: github.com:octaltree/dotfiles
-      dest: /tmp/dotfiles
-      track_submodules: yes
-      update: yes
-    changed_when: False
-  - name: status
-    shell: cd /tmp/dotfiles && git status
-    register: status
-    changed_when: False
-  - name: commit
-    shell: cd /tmp/dotfiles && git add . && git commit -m 'update submodules'
-    when: '"modified" in status.stdout'
-    changed_when: '"modified" in status.stdout'
-  - name: push
-    shell: cd /tmp/dotfiles && git push origin master
-    changed_when: False
-  rescue:
-    - debug: msg="rescue"
-
 - name: Clone dotfiles
   git:
     repo: https://github.com/octaltree/dotfiles
@@ -38,7 +11,7 @@
     update: yes
   ignore_errors: True
 
-#- name: rcin deploy
-#  shell: cd /home/{{ user.name }}/.dotfiles && ./rcin deploy > /dev/null && ls /home/{{ user.name }}
-#  register: rcin
-#  changed_when: '"dotfilesbak" in rcin.stdout'
+- name: rcin all
+  shell: cd /home/{{ user.name }}/.dotfiles && ./rcin all > /dev/null && ls /home/{{ user.name }}
+  register: rcin
+  changed_when: '"dotfilesbak" in rcin.stdout'
