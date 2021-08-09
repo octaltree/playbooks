@@ -70,6 +70,7 @@ pacman:
     - python-language-server
     - texlab
     - mingw-w64-gcc # rustでクロスコンパイル用
+    - sccache
     - musl
     - deno
     - wabt # wasmのアセンブラ
