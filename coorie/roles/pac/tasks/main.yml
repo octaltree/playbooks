@@ -18,9 +18,9 @@
   become: yes
 
 - name: aur git
-  shell: yay -Y --gendb || ehco ''
+  shell: env LC_MESSAGES=C yay -Y --gendb
   register: gendb
-  changed_when: '"パッケージのインストールは行われません" not in gendb.stdout'
+  changed_when: '"No packages were installed" not in gendb.stdout'
 
 - name: aur upgrade
   aur:
