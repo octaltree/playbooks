@@ -5,11 +5,11 @@
     update: no
 
 - name: Set remote dotfiles
-  git:
-    repo: github.com:octaltree/dotfiles
-    dest: /home/{{ user.name }}/.dotfiles
-    update: yes
-  ignore_errors: True
+  git_config:
+    repo: /home/{{ user.name }}/.dotfiles
+    scope: local
+    name: remote.origin.url
+    value: github.com:octaltree/dotfiles
 
 - name: rcin all
   shell: cd /home/{{ user.name }}/.dotfiles && ./rcin all > /dev/null && ls /home/{{ user.name }}
