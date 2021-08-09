@@ -17,6 +17,11 @@
     name: "{{ pacman.absent }}"
   become: yes
 
+- name: aur git
+  shell: yay -Y --gendb || ehco ''
+  register: gendb
+  changed_when: '"パッケージのインストールは行われません" not in gendb.stdout'
+
 - name: aur upgrade
   aur:
     use: yay
