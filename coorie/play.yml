@@ -2,7 +2,7 @@
 - hosts: localhost
   gather_facts: no
   roles:
-    - kewlfft.aur
+    - ansible-aur
     - user
     - pac
     - dotfiles
