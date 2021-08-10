@@ -104,6 +104,7 @@ pacman:
     - pulseaudio-bluetooth
     - pavucontrol-qt
     - linux510-virtualbox-host-modules
+    - gvim
   absent:
     - unzip
     - xorg-xbacklight
