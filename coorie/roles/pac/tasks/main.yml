@@ -18,7 +18,7 @@
   become: yes
 
 - name: aur git
-  shell: env LC_MESSAGES=C yay -Y --gendb
+  shell: env LANG=C yay -Y --gendb
   register: gendb
   changed_when: '"No packages were installed" not in gendb.stdout'
 
@@ -28,8 +28,8 @@
     upgrade: yes
     aur_only: yes
 
-- name: aur present
+- name: aur latest
   aur:
     use: yay
-    state: present
+    state: latest
     name: "{{ aur.present }}"
