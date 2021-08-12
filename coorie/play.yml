@@ -11,6 +11,7 @@
         line: 'Defaults timestamp_timeout = 240'
         validate: '/usr/sbin/visudo -cf %s'
       become: yes
+      changed_when: False
   roles:
     - ansible-aur
     - user
@@ -33,3 +34,4 @@
         line: 'Defaults timestamp_timeout = 15'
         validate: '/usr/sbin/visudo -cf %s'
       become: yes
+      changed_when: False
