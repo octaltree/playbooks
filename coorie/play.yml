@@ -1,6 +1,16 @@
 ---
 - hosts: localhost
   gather_facts: no
+  pre_tasks:
+    - name: Set sudo timeout in progress
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^\s*#?\s*Defaults\s+timestamp_timeout\s*=.*'
+        insertafter: EOF
+        line: 'Defaults timestamp_timeout = 240'
+        validate: '/usr/sbin/visudo -cf %s'
+      become: yes
   roles:
     - ansible-aur
     - user
@@ -13,3 +23,13 @@
     - virtualbox
     - rust
     - udev
+  post_tasks:
+    - name: Set sudo timeout in progress
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^\s*#?\s*Defaults\s+timestamp_timeout\s*=.*'
+        insertafter: EOF
+        line: 'Defaults timestamp_timeout = 15'
+        validate: '/usr/sbin/visudo -cf %s'
+      become: yes

@@ -3,8 +3,8 @@
   lineinfile:
     dest: /etc/systemd/logind.conf
     state: present
-    backrefs: yes
-    regexp: '^\s*#\s*HandleLidSwitch\s*=.*'
+    regexp: '^\s*#?\s*HandleLidSwitch\s*=.*'
+    insertafter: '[Login]'
     line: 'HandleLidSwitch = ignore'
   become: yes
 
@@ -12,7 +12,7 @@
   lineinfile:
     dest: /etc/systemd/logind.conf
     state: present
-    backrefs: yes
-    regexp: '^\s*#\s*HandleLidSwitchDocked\s*=.*'
+    regexp: '^\s*#?\s*HandleLidSwitchDocked\s*=.*'
+    insertafter: '[Login]'
     line: 'HandleLidSwitchDocked = ignore'
   become: yes
