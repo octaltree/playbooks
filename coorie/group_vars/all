@@ -133,7 +133,6 @@ aur:
     - tealdeer
     - anydesk-bin
     - rust-analyzer-git
-    - zellij-git
     - android-studio
     - todoist
     - typescript-language-server-bin
