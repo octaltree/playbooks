@@ -42,6 +42,7 @@
     - cargo-asm
     - cargo-generate
     - rhack
+    - rustdoc-index
   register: install
   changed_when: '"is already installed" not in install.stderr'
 
