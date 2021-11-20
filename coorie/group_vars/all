@@ -106,6 +106,8 @@ pacman:
     - pavucontrol-qt
     - linux510-virtualbox-host-modules
     - gvim
+    - lmms
+    - ardour
   absent:
     - unzip
     - xorg-xbacklight
