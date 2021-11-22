@@ -24,6 +24,7 @@ pacman:
     - zsh
     - jq
     - zip
+    - unzip
     - unrar
     - imagemagick
     - nginx
@@ -109,7 +110,6 @@ pacman:
     - lmms
     - ardour
   absent:
-    - unzip
     - xorg-xbacklight
     - inotify-tools
 
@@ -120,7 +120,6 @@ aur:
     - neovim-git
     - ruby-neovim
     - nodejs-pxder
-    - unzip-iconv
     - google-cloud-sdk
     - google-chrome
     - flashplayer-standalone
