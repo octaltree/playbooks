@@ -69,7 +69,7 @@ pacman:
     - texlive-most
     - texlive-langjapanese
     - bash-language-server
-    - python-language-server
+    - python-lsp-server
     - texlab
     - mingw-w64-gcc # rustでクロスコンパイル用
     - sccache
