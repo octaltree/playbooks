@@ -1,0 +1,20 @@
+- name: unused files
+  script: move.sh "{{ item }}"
+  register: move
+  changed_when: '"unchanged" not in move.stdout'
+  become: yes
+  with_items:
+    - /usr/share/vim/vimfiles/plugin/fzf.vim
+    - /usr/share/vim/vimfiles/ftdetect/conkyrc.vim
+    - /usr/share/vim/vimfiles/ftdetect/meson.vim
+    - /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+    - /usr/share/nvim/runtime/plugin/tohtml.vim
+    - /usr/share/nvim/runtime/plugin/spellfile.vim
+    - /usr/share/nvim/runtime/plugin/tutor.vim
+    - /usr/share/nvim/runtime/plugin/zipPlugin.vim
+    - /usr/share/nvim/runtime/plugin/tarPlugin.vim
+    - /usr/share/nvim/runtime/plugin/gzip.vim
+
+#- name: unused filetypes
+#  shell: echo "{{ item }}"
+#  with_items: []
