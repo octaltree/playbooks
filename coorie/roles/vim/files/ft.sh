@@ -2,11 +2,13 @@
 
 function main(){
   local body=`cat "$1"`
-  local new=`echo "$body"| _main "$2"`
+  local bak=`cat "$2"`
+  local new=`echo "$body"| reduce "$3"`
   if [ "$new" = "$body" ]; then
     echo 'unchanged'
     return 0
   fi
+  echo "$body" > "$2"
   echo "$new" > "$1"
   if ! valid "$1"; then
     echo "$body" > "$1"
@@ -17,28 +19,26 @@ function main(){
   fi
 }
 
-function _main(){
+function reduce(){
   local found=''
   local n=1
-  IFS=$'\n'
   while read -r l; do
     if [ $found ]; then
       if [ "$l" = "" ]; then
         found=''
-      else
-        echo -n '"'
       fi
     else
       IFS=$'\n'
       for q in `echo "$1"`; do
         if [ "\" $q" = "$l" ]; then
           found='found'
-          echo -n '"'
           break
         fi
       done
+      if ! [ $found ]; then
+        echo "$l"
+      fi
     fi
-    echo "$l"
     n=`expr $n + 1`
   done
 }
@@ -52,4 +52,4 @@ function valid(){
   fi
 }
 
-main "$1" "$2"
+main "$1" "$2" "$3"

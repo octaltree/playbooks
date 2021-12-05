@@ -16,12 +16,13 @@
     - /usr/share/nvim/runtime/plugin/gzip.vim
 
 - name: unused filetypes
-  script: ft.sh "{{ file }}" "{{ body }}"
+  script: ft.sh "{{ target }}" "{{ bak }}" "{{ body }}"
   register: ft
   changed_when: '"unchanged" not in ft.stdout'
   become: yes
   vars:
-    file: /usr/share/nvim/runtime/filetype.vim
+    target: /usr/share/nvim/runtime/filetype.vim
+    bak: /usr/share/nvim/runtime/_filetype.vim
     items:
       - AceDB
     body: "{{ items | join('\n') }}"
