@@ -15,6 +15,13 @@
     - /usr/share/nvim/runtime/plugin/tarPlugin.vim
     - /usr/share/nvim/runtime/plugin/gzip.vim
 
-#- name: unused filetypes
-#  shell: echo "{{ item }}"
-#  with_items: []
+- name: unused filetypes
+  script: ft.sh "{{ file }}" "{{ body }}"
+  register: ft
+  changed_when: '"unchanged" not in ft.stdout'
+  become: yes
+  vars:
+    file: /usr/share/nvim/runtime/filetype.vim
+    items:
+      - AceDB
+    body: "{{ items | join('\n') }}"
