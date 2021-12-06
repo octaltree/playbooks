@@ -43,7 +43,7 @@ def join_blocks(blocks):
 
 def parse_block(block):
     lines = block.splitlines()
-    au = (l for l in lines if l.startswith('au Buf'))
+    au = (l for l in lines if l.startswith('au Buf') or l.startswith('autocmd Buf'))
     return [a.split()[2] for a in au]
 
 def filter_blocks(blocks, block_signatures, exclusion):
