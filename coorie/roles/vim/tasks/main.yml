@@ -15,6 +15,15 @@
     - /usr/share/nvim/runtime/plugin/tarPlugin.vim
     - /usr/share/nvim/runtime/plugin/gzip.vim
 
-#- name: unused filetypes
-#  shell: echo "{{ item }}"
-#  with_items: []
+- name: unused filetypes
+  script: filetype.py "{{ target }}" "{{ bak }}" "{{ body }}"
+  register: ft
+  changed_when: '"unchanged" not in ft.stdout'
+  become: yes
+  vars:
+    target: /usr/share/nvim/runtime/filetype.vim
+    bak: /usr/share/nvim/runtime/_filetype.vim
+    items:
+      - "*.inp"
+      - "*.8th"
+    body: "{{ items | join('\n') }}"
