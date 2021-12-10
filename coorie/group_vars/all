@@ -140,6 +140,7 @@ aur:
     - pastel
     - lua-format-git
     - luacheck
+    - stylua-bin
     - alacritty-git
   absent: []
 
