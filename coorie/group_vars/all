@@ -137,7 +137,7 @@ aur:
     - android-studio
     - todoist
     - typescript-language-server-bin
-    - pastel
+    - pastel-git
     - lua-format-git
     - luacheck
     - stylua-bin
