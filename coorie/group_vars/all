@@ -95,7 +95,6 @@ pacman:
     - geckodriver
     - gimp
     - mpv
-    - gpicview
     - libreoffice-still
     - evince
     - thunderbird
@@ -109,6 +108,8 @@ pacman:
     - gvim
     - lmms
     - ardour
+    - gpicview
+    - gthumb
   absent:
     - xorg-xbacklight
     - inotify-tools
