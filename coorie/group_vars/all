@@ -110,6 +110,7 @@ pacman:
     - ardour
     - gpicview
     - gthumb
+    - feh
   absent:
     - xorg-xbacklight
     - inotify-tools
