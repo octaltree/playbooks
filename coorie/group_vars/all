@@ -121,7 +121,6 @@ aur:
     - ttf-cica
     - neovim-git
     - ruby-neovim
-    - nodejs-pxder
     - google-cloud-sdk
     - google-chrome
     - flashplayer-standalone

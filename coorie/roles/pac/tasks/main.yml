@@ -33,3 +33,9 @@
     use: yay
     state: latest
     name: "{{ aur.present }}"
+
+- name: npm
+  shell: npm -g install "{{ item }}"
+  become: yes
+  with_items:
+    - pxder
