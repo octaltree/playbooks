@@ -51,7 +51,6 @@ pacman:
     - pandoc
     - tree-sitter
     - util-linux
-    - miscfiles
     - hyperfine
     - torsocks
     - torbrowser-launcher
@@ -131,6 +130,7 @@ aur:
     - open-jtalk
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
+    - miscfiles
     - xsv-bin
     - tealdeer
     - anydesk-bin
