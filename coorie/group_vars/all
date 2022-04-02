@@ -143,6 +143,7 @@ aur:
     - luacheck
     - stylua-bin
     - alacritty-git
+    - man-pages-ja
   absent: []
 
 # vim: ft=yaml
