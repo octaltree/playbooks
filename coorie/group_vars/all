@@ -140,7 +140,7 @@ aur:
     - typescript-language-server-bin
     - pastel-git
     - lua-format-git
-    - luacheck
+    - luacheck-git
     - stylua-bin
     - alacritty-git
     - man-pages-ja
