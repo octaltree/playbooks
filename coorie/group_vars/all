@@ -131,7 +131,7 @@ aur:
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
     - miscfiles
-    - xsv-bin
+    - xsv-git
     - tealdeer
     - anydesk-bin
     - rust-analyzer-git
