@@ -144,6 +144,7 @@ aur:
     - stylua-bin
     - alacritty-git
     - man-pages-ja
+    - fswebcam
   absent: []
 
 # vim: ft=yaml
