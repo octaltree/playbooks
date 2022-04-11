@@ -110,6 +110,7 @@ pacman:
     - gpicview
     - gthumb
     - feh
+    - barrier-headless
   absent:
     - xorg-xbacklight
     - inotify-tools
