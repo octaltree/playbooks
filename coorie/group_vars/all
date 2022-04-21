@@ -139,7 +139,6 @@ aur:
     - rust-analyzer-git
     - android-studio
     - todoist
-    #- typescript-language-server-bin
     - pastel-git
     - lua-format-git
     - luacheck-git
