@@ -143,7 +143,7 @@ aur:
     - pastel-git
     - lua-format-git
     - luacheck-git
-    #- stylua-bin
+    - stylua-git
     - alacritty-git
     - man-pages-ja
     - fswebcam
