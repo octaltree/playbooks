@@ -63,6 +63,7 @@ pacman:
     - rustup
     - python
     - python-pip
+    - npm
     - yarn
     - stack
     - texlive-most
@@ -138,11 +139,11 @@ aur:
     - rust-analyzer-git
     - android-studio
     - todoist
-    - typescript-language-server-bin
+    #- typescript-language-server-bin
     - pastel-git
     - lua-format-git
     - luacheck-git
-    - stylua-bin
+    #- stylua-bin
     - alacritty-git
     - man-pages-ja
     - fswebcam

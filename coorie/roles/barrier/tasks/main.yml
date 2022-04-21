@@ -1,0 +1,15 @@
+- name: barrier dir
+  file:
+    path: /home/{{ user.name }}/.local/share/barrier/SSL/Fingerprints
+    state: directory
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+    mode: 0755
+
+- name: stat pem
+  stat: path=/home/{{ user.name }}/.local/share/barrier/SSL/Barrier.pem
+  register: pem
+
+- name: create pem
+  shell: openssl req -x509 -nodes -days 365 -subj /CN=Barrier -newkey rsa:4096 -keyout /home/{{ user.name }}/.local/share/barrier/SSL/Barrier.pem -out /home/{{ user.name }}/.local/share/barrier/SSL/Barrier.pem && echo "v2:sha256:$(openssl x509 -fingerprint -sha256 -noout -in /home/{{ user.name }}/.local/share/barrier/SSL/Barrier.pem | cut -d"=" -f2)" > /home/{{ user.name }}/.local/share/barrier/SSL/Fingerprints/Local.txt
+  when: not pem.stat.exists

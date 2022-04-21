@@ -25,6 +25,7 @@
     - rust
     - udev
     - vim
+    - barrier
   post_tasks:
     - name: Set sudo timeout in progress
       lineinfile:
