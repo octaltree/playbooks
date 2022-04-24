@@ -63,6 +63,8 @@ pacman:
     - rustup
     - python
     - python-pip
+    - python-pipenv
+    - pyenv
     - npm
     - yarn
     - stack
