@@ -78,6 +78,8 @@ pacman:
     - musl
     - deno
     - wabt # wasmのアセンブラ
+    - jupyter-notebook
+    - python-qtconsole
       # DB
     - mariadb
     - mariadb-clients
@@ -148,6 +150,7 @@ aur:
     - alacritty-git
     - man-pages-ja
     - fswebcam
+    - python-jupytext
   absent: []
 
 # vim: ft=yaml
