@@ -70,7 +70,7 @@ pacman:
     - stack
     - texlive-most
     - texlive-langjapanese
-    - bash-language-server
+    #- bash-language-server
     - python-lsp-server
     - texlab
     - mingw-w64-gcc # rustでクロスコンパイル用
