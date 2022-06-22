@@ -116,6 +116,12 @@ pacman:
     - gthumb
     - feh
     - barrier-headless
+      # sound
+    - jack2
+    - libffado
+    - pulseaudio-jack
+    - jack2-dbus
+    - qjackctl
   absent:
     - xorg-xbacklight
     - inotify-tools
