@@ -15,6 +15,7 @@
     - rustfmt
     - rust-src
     - rust-analysis
+    - rust-docs
   register: component
   changed_when: '"is up to date" not in component.stderr'
 
