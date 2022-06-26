@@ -157,6 +157,7 @@ aur:
     - man-pages-ja
     - fswebcam
     - python-jupytext
+    - graphql-lsp
   absent: []
 
 # vim: ft=yaml
