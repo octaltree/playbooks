@@ -81,6 +81,7 @@ pacman:
     - wabt # wasmのアセンブラ
     - jupyter-notebook
     - python-qtconsole
+    - luacheck
       # DB
     - mariadb
     - mariadb-clients
