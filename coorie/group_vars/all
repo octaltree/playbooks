@@ -89,7 +89,8 @@ pacman:
     - postgresql
     - postgresql-libs
     - redis
-      # GUIっぽいもの
+    # GUIっぽいもの
+    - alacritty
     - fcitx
     - fcitx-im
     - fcitx-mozc
@@ -156,7 +157,6 @@ aur:
     - lua-format-git
     - luacheck-git
     - stylua-git
-    - alacritty-git
     - man-pages-ja
     - fswebcam
     - python-jupytext
