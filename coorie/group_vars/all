@@ -155,7 +155,6 @@ aur:
     - todoist
     - pastel-git
     - lua-format-git
-    - luacheck-git
     - stylua-git
     - man-pages-ja
     - fswebcam
