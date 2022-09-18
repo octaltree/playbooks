@@ -82,6 +82,7 @@ pacman:
     - jupyter-notebook
     - python-qtconsole
     - luacheck
+    - stylua
       # DB
     - mariadb
     - mariadb-clients
@@ -155,7 +156,6 @@ aur:
     - todoist
     - pastel-git
     - lua-format-git
-    - stylua-git
     - man-pages-ja
     - fswebcam
     - python-jupytext
