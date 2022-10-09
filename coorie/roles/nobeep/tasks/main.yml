@@ -1,0 +1,6 @@
+---
+- name: Copy nobeep.conf
+  copy:
+    src: nobeep.conf
+    dest: /etc/modprobe.d/nobeep.conf
+  become: yes

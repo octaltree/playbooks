@@ -18,6 +18,7 @@
     - pac
     - dotfiles
     - grub
+    - nobeep
     - ssd
     - lidswitch
     - docker
