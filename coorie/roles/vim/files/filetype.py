@@ -15,7 +15,10 @@ def main() -> int:
     if orig == new:
         print('unchanged')
         return 0
-    prebak = bak.read_text()
+    try:
+        prebak = bak.read_text()
+    except FileNotFoundError:
+        prebak = ''
     bak.write_text(orig)
     target.write_text(new)
     if not valid(target):

@@ -20,6 +20,7 @@ pacman:
     - the_silver_searcher
     - ripgrep
     - tmux
+    - neovim
     - fzf
     - zsh
     - jq
@@ -130,12 +131,12 @@ pacman:
   absent:
     - xorg-xbacklight
     - inotify-tools
+    - clipit
 
 aur:
   present:
     - ttf-ricty
     - ttf-cica
-    - neovim-git
     - ruby-neovim
     - google-cloud-sdk
     - google-chrome
@@ -143,20 +144,20 @@ aur:
     - virtualbox-ext-oracle
     - slack-desktop
     - light-git
-    - pulsemixer-git
+    #- pulsemixer-git
     - open-jtalk
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
     - miscfiles
-    - xsv-git
+    #- xsv-git
     - tealdeer
     - anydesk-bin
-    - rust-analyzer-git
+    #- rust-analyzer-git
     - android-studio
     - todoist
-    - pastel-git
-    - lua-format-git
-    - man-pages-ja
+    #- pastel-git
+    #- lua-format-git
+    #- man-pages-ja
     - fswebcam
     - python-jupytext
   absent: []
