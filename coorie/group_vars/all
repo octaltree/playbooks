@@ -128,6 +128,7 @@ pacman:
     - jack2-dbus
     - qjackctl
     - xdot # graphviz viewer
+    - pulsemixer
   absent:
     - xorg-xbacklight
     - inotify-tools
@@ -144,7 +145,6 @@ aur:
     - virtualbox-ext-oracle
     - slack-desktop
     - light-git
-    #- pulsemixer-git
     - open-jtalk
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
