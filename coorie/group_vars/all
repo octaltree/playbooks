@@ -118,6 +118,7 @@ pacman:
     - lmms
     - ardour
     - gpicview
+    - webp-pixbuf-loader
     - gthumb
     - feh
     - barrier-headless
