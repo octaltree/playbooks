@@ -121,6 +121,8 @@ pacman:
     - gthumb
     - feh
     - barrier-headless
+    - pastel
+    - xsv
       # sound
     - jack2
     - libffado
@@ -149,14 +151,12 @@ aur:
     - open-jtalk-voice-mei
     - open-jtalk-voice-nitech-jp-atr503-m001
     - miscfiles
-    #- xsv-git
     - tealdeer
     - anydesk-bin
-    #- rust-analyzer-git
+    - rust-analyzer-git
     - android-studio
     - todoist
-    #- pastel-git
-    #- lua-format-git
+    - lua-format
     #- man-pages-ja
     - fswebcam
     - python-jupytext
