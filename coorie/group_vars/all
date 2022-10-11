@@ -161,6 +161,7 @@ aur:
     #- man-pages-ja
     - fswebcam
     - python-jupytext
+    - mermaid-cli
   absent: []
 
 # vim: ft=yaml
