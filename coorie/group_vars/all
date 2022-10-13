@@ -30,6 +30,9 @@ pacman:
     - imagemagick
     - nginx
     - sox
+    - lame
+    - libmad
+    - twolame
     - lsof
     - w3m
     - docker
