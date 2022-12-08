@@ -42,7 +42,7 @@ pacman:
     - oath-toolkit # 2段階認証 otw.sh
     - zbar # バーコード zbarimgコマンド
     - downgrade
-    - youtube-dl
+    - yt-dlp
     - gnuplot
     - git-lfs
     - translate-shell
