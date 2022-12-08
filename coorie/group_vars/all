@@ -116,7 +116,7 @@ pacman:
     - chromium
     - pulseaudio-bluetooth
     - pavucontrol-qt
-    - linux510-virtualbox-host-modules
+    - linux515-virtualbox-host-modules
     - gvim
     - lmms
     - ardour
