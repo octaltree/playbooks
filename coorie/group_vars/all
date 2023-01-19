@@ -117,6 +117,7 @@ pacman:
     - pulseaudio-bluetooth
     - pavucontrol-qt
     - linux515-virtualbox-host-modules
+    - virtualbox-guest-iso
     - gvim
     - lmms
     - ardour
