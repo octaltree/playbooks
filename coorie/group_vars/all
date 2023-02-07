@@ -166,6 +166,7 @@ aur:
     - fswebcam
     - python-jupytext
     - mermaid-cli
+    - nvm-git
   absent: []
 
 # vim: ft=yaml
