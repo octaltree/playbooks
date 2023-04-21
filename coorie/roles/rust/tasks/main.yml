@@ -24,6 +24,11 @@
   register: b
   changed_when: '"is already installed" not in b.stderr'
 
+- name: wasm-pack
+  shell: cargo install wasm-pack --no-default-features
+  register: b
+  changed_when: '"is already installed" not in b.stderr'
+
 - name: cargo install
   shell: cargo install "{{ item }}"
   with_items:
@@ -33,7 +38,7 @@
     - cargo-update
     - cargo-play
     - diesel_cli
-    - wasm-pack
+    #- wasm-pack
     - trunk
     - cargo-tarpaulin
     - cargo-udeps
