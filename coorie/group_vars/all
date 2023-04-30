@@ -166,7 +166,7 @@ aur:
     - python-jupytext
     - mermaid-cli
     - nvm-git
-    - chatgpt-desktop-git
+    - chatgpt-desktop-bin
     - epdfview-gtk3
   absent: []
 
