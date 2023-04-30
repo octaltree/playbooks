@@ -112,11 +112,10 @@ pacman:
     - thunderbird
     - vlc
     - peek
-    - virtualbox
+    - virtualbox-bin
     - chromium
     - pulseaudio-bluetooth
     - pavucontrol-qt
-    - linux515-virtualbox-host-modules
     - virtualbox-guest-iso
     - gvim
     - lmms
@@ -146,7 +145,7 @@ aur:
     - ttf-ricty
     - ttf-cica
     - ruby-neovim
-    - google-cloud-sdk
+    - google-cloud-cli
     - google-chrome
     - flashplayer-standalone
     - virtualbox-ext-oracle
@@ -167,6 +166,8 @@ aur:
     - python-jupytext
     - mermaid-cli
     - nvm-git
+    - chatgpt-desktop-git
+    - epdfview-gtk3
   absent: []
 
 # vim: ft=yaml
