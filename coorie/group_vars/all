@@ -71,6 +71,7 @@ pacman:
     - python-pipenv
     - pyenv
     - npm
+    - nvm
     - yarn
     - stack
     - texlive-most
