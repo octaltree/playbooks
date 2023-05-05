@@ -166,7 +166,6 @@ aur:
     - fswebcam
     - python-jupytext
     - mermaid-cli
-    - nvm-git
     - chatgpt-desktop-bin
     - epdfview-gtk3
   absent: []
