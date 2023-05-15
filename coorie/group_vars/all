@@ -158,7 +158,6 @@ aur:
     - miscfiles
     - tealdeer
     - anydesk-bin
-    - rust-analyzer-git
     - android-studio
     - todoist
     - lua-format
