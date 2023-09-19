@@ -61,6 +61,7 @@ pacman:
     - watchexec
     - bottom
     - graphviz
+    - smartmontools
       # 言語
     - cmake
     - ninja
@@ -74,7 +75,7 @@ pacman:
     - nvm
     - yarn
     - stack
-    - texlive-most
+    #- texlive-most
     - texlive-langjapanese
     #- bash-language-server
     - python-lsp-server
