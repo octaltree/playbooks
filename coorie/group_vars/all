@@ -114,7 +114,7 @@ pacman:
     - thunderbird
     - vlc
     - peek
-    - virtualbox-bin
+    #- virtualbox-bin
     - chromium
     - pulseaudio-bluetooth
     - pavucontrol-qt
