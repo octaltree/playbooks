@@ -63,6 +63,7 @@ pacman:
     - graphviz
     - smartmontools
     - fio
+    - bolt
       # 言語
     - cmake
     - ninja
@@ -119,7 +120,8 @@ pacman:
     - chromium
     - pulseaudio-bluetooth
     - pavucontrol-qt
-    - virtualbox-guest-iso
+    - bluez-utils
+    #- virtualbox-guest-iso
     - gvim
     - lmms
     - ardour
@@ -151,7 +153,7 @@ aur:
     - google-cloud-cli
     - google-chrome
     - flashplayer-standalone
-    - virtualbox-ext-oracle
+    #- virtualbox-ext-oracle
     - slack-desktop
     - light-git
     - open-jtalk
